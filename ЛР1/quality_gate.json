@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "lab": 1,
+  "report_number": 1,
+  "status": "passed",
+  "checked_at": "2026-10-19T13:10:35Z",
+  "checks": [
+    "content_references",
+    "artifacts",
+    "report_docx",
+    "report_pdf",
+    "text_docx"
+  ],
+  "files": [
+    "ЛР1/Отчет_ЛР1.docx",
+    "ЛР1/Отчет_ЛР1.pdf",
+    "ЛР1/text.docx"
+  ],
+  "sha256": {
+    "_context.json": "144f86279945010f874e9b539946276eff463abcdc61a7be251ac4aca4ed0d32",
+    "ЛР1/content.json": "c2344aa3b6446584ff9a084d0b207f9aeab88332a4002bc52886906d49f6e34b",
+    "ЛР1/content_text.json": "744fe3b7a73c8dd6276990abd8607afb768e8ffac4d9cae4943de9d171eb92ca",
+    "ЛР1/screenshots/bad_arngren.png": "19534c0104497f6644f652d1e115fc5a126e9d900846461799c2349add45e445",
+    "ЛР1/screenshots/bad_suzannecollins.png": "b1456f4064ba063a2e180310d197f8cf40079a83e4d1a80f45e96376b598618d",
+    "ЛР1/screenshots/bad_yale.png": "94c0d96f3165e86739d2185e3b037ee13e115ec6793ccb6b754ea23c122f2be4",
+    "ЛР1/screenshots/good_apple.png": "89d2b2f367681e0f1a16160ce66e2fadc83be88b67e35c9a740f200d2a05de18",
+    "ЛР1/screenshots/good_govuk.png": "5b2985012d8a4e90882aa7757e4e2db7af2aec84211e645cea1f3e6111a98813",
+    "ЛР1/screenshots/good_nngroup.png": "325753ca751f2181dcdedde37379d3b85d1a6e428d2278ab631a8b324f9e3ea2",
+    "ЛР1/text.docx": "1efc0783d6f4694d8e47322c100345ac93fc3c43ac76e38ceabcb306dcb6e3d5",
+    "ЛР1/методичка.docx": "c354656925bae40ff1fc3f2afbf7fb21fbd7f3e715c673fe962139540a263894",
+    "ЛР1/Отчет_ЛР1.docx": "bb0936a824d9fa366f48765188b3ca71f9b875bd1c84d76f1a8e94f79931fc1d",
+    "ЛР1/Отчет_ЛР1.pdf": "e919d4a53c8ee13172b30952cda37f6903ba385b65447e5df6f5f8bf414efa7c"
+  }
+}

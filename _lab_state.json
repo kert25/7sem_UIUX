@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "commit_on_completion": false,
+  "project_notes": [
+    "Титульный лист оформляется по образцу Отчет_ЛР5.docx из корня проекта."
+  ],
+  "labs": {
+    "1": {
+      "status": "completed",
+      "directory": "ЛР1",
+      "methodical_guide": "ЛР1/методичка.docx",
+      "report_number": 1,
+      "theme": "Основные принципы UX/UI дизайна",
+      "variant": "9",
+      "notes": [
+        "Требуется не менее трёх пар примеров хорошего и плохого проектирования веб-сайтов с описанием ошибок."
+      ],
+      "next_step": "Лабораторная работа завершена и подтверждена пользователем.",
+      "tooling": {
+        "report_inspector": "bundled:inspect_docx",
+        "report_runner": "bundled:lab_runner",
+        "browser_harness": "bundled:cdp"
+      },
+      "artifacts": [
+        "ЛР1/методичка.docx",
+        "ЛР1/content.json",
+        "ЛР1/content_text.json",
+        "ЛР1/screenshots/bad_arngren.png",
+        "ЛР1/screenshots/bad_yale.png",
+        "ЛР1/screenshots/bad_suzannecollins.png",
+        "ЛР1/screenshots/good_apple.png",
+        "ЛР1/screenshots/good_govuk.png",
+        "ЛР1/screenshots/good_nngroup.png",
+        "ЛР1/Отчет_ЛР1.docx",
+        "ЛР1/Отчет_ЛР1.pdf",
+        "ЛР1/text.docx",
+        "ЛР1/quality_gate.json"
+      ],
+      "verification": {
+        "status": "passed",
+        "checked_at": "2026-10-19T13:10:35Z",
+        "checks": [
+          "content_references",
+          "artifacts",
+          "report_docx",
+          "report_pdf",
+          "text_docx"
+        ],
+        "warnings": []
+      }
+    }
+  }
+}

@@ -2,20 +2,22 @@
   "version": 2,
   "commit_on_completion": false,
   "project_notes": [
-    "Титульный лист оформляется по образцу Отчет_ЛР5.docx из корня проекта."
+    "Титульный лист оформляется по образцу Отчет_ЛР5.docx из корня проекта.",
+    "Методичка ЛР2 — «Практическая работа 2.docx» — перенесена в ЛР2/методичка.docx."
   ],
   "labs": {
     "1": {
-      "status": "completed",
+      "status": "ready_for_review",
       "directory": "ЛР1",
       "methodical_guide": "ЛР1/методичка.docx",
       "report_number": 1,
       "theme": "Основные принципы UX/UI дизайна",
       "variant": "9",
       "notes": [
-        "Требуется не менее трёх пар примеров хорошего и плохого проектирования веб-сайтов с описанием ошибок."
+        "Требуется не менее трёх пар примеров хорошего и плохого проектирования веб-сайтов с описанием ошибок.",
+        "Отрицательные и удачные примеры идут в одинаковом порядке и относятся к близким областям; разбор каждого примера строится на одних и тех же признаках, сами пары в тексте не называются."
       ],
-      "next_step": "Лабораторная работа завершена и подтверждена пользователем.",
+      "next_step": "Отчёт пересобран и проверен; ждём проверки пользователя.",
       "tooling": {
         "report_inspector": "bundled:inspect_docx",
         "report_runner": "bundled:lab_runner",
@@ -28,9 +30,9 @@
         "ЛР1/screenshots/bad_arngren.png",
         "ЛР1/screenshots/bad_yale.png",
         "ЛР1/screenshots/bad_suzannecollins.png",
-        "ЛР1/screenshots/good_apple.png",
-        "ЛР1/screenshots/good_govuk.png",
+        "ЛР1/screenshots/good_apple_store.png",
         "ЛР1/screenshots/good_nngroup.png",
+        "ЛР1/screenshots/good_guardian_books.png",
         "ЛР1/Отчет_ЛР1.docx",
         "ЛР1/Отчет_ЛР1.pdf",
         "ЛР1/text.docx",
@@ -38,13 +40,86 @@
       ],
       "verification": {
         "status": "passed",
-        "checked_at": "2026-10-19T13:10:35Z",
+        "checked_at": "2026-11-02T12:37:03Z",
         "checks": [
           "content_references",
           "artifacts",
           "report_docx",
           "report_pdf",
-          "text_docx"
+          "text_docx",
+          "report_structure",
+          "execution_evidence"
+        ],
+        "warnings": []
+      }
+    },
+    "2": {
+      "status": "ready_for_review",
+      "directory": "ЛР2",
+      "methodical_guide": "ЛР2/методичка.docx",
+      "report_number": 2,
+      "theme": "Анализ пользовательских сценариев и составление CJM для существующего цифрового продукта",
+      "variant": "9",
+      "deliverable": {
+        "kind": "single",
+        "paths": [
+          "ЛР2/Отчет_ЛР2.docx",
+          "ЛР2/CJM_Островок.xlsx",
+          "ЛР2/screenshots/08_cjm_map.png"
+        ]
+      },
+      "notes": [
+        "Продукт для анализа — веб-сервис «Островок» (ostrovok.ru), сценарий «найти и забронировать отель в Москве на одну ночь».",
+        "Карта CJM as-is: 7 этапов, 22 барьера, 10 рекомендаций; собирается скриптом ЛР2/make_cjm.py из файла ЛР2/cjm_data.json.",
+        "Экран оплаты не открывался, чтобы не создавать реальную бронь; ограничение зафиксировано в отчёте и на карте."
+      ],
+      "next_step": "Отчёт, PDF и конспект собраны, quality gate пройден; ждём проверки пользователя.",
+      "commands": {
+        "build_cjm": "py ЛР2/make_cjm.py",
+        "build_report": "py <lab-works skill>/scripts/lab_runner.py --root . --lab 2 --action build-report",
+        "prepare_report": "py <lab-works skill>/scripts/lab_runner.py --root . --lab 2 --action prepare-report"
+      },
+      "command_templates": {
+        "poster_capture": "node <lab-works skill>/scripts/cdp.js run --port 9223 --file ЛР2/CJM_map.html --wait 1500 --shot <png>"
+      },
+      "tooling": {
+        "report_inspector": "bundled:inspect_docx",
+        "report_runner": "bundled:lab_runner",
+        "browser_harness": "bundled:cdp"
+      },
+      "artifacts": [
+        "ЛР2/методичка.docx",
+        "ЛР2/cjm_data.json",
+        "ЛР2/make_cjm.py",
+        "ЛР2/CJM_map.html",
+        "ЛР2/emotion_curve.html",
+        "ЛР2/CJM_Островок.xlsx",
+        "ЛР2/content.json",
+        "ЛР2/content_text.json",
+        "ЛР2/screenshots/01_home.png",
+        "ЛР2/screenshots/02_results.png",
+        "ЛР2/screenshots/03_hotel.png",
+        "ЛР2/screenshots/04_rates.png",
+        "ЛР2/screenshots/05_booking.png",
+        "ЛР2/screenshots/06_reviews.png",
+        "ЛР2/screenshots/07_emotion_curve.png",
+        "ЛР2/screenshots/08_cjm_map.png",
+        "ЛР2/Отчет_ЛР2.docx",
+        "ЛР2/Отчет_ЛР2.pdf",
+        "ЛР2/text.docx",
+        "ЛР2/quality_gate.json"
+      ],
+      "verification": {
+        "status": "passed",
+        "checked_at": "2026-11-02T13:23:17Z",
+        "checks": [
+          "content_references",
+          "artifacts",
+          "report_docx",
+          "report_pdf",
+          "text_docx",
+          "report_structure",
+          "execution_evidence"
         ],
         "warnings": []
       }

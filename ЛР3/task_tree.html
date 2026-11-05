@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Дерево задач</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #ffffff; }
+  #fig { width: 1000px; height: 481px; background: #ffffff; }
+  text { font-family: "Segoe UI", Arial, sans-serif; }
+</style>
+</head>
+<body>
+<div id="fig">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="481" viewBox="0 0 1000 481">
+<rect x="0" y="0" width="1000" height="481" fill="#ffffff"/>
+<text x="500.0" y="30" font-size="20" font-weight="700" fill="#1b1b1f" text-anchor="middle">Дерево задачи «купить билет на поезд Тула — Москва»</text>
+<text x="500.0" y="52" font-size="14" fill="#5c5f66" text-anchor="middle">уровень 0 — задача, уровень 1 — этапы, уровень 2 — микродействия</text>
+<rect x="265.0" y="64" width="470" height="74" rx="10" fill="#eef0ff" stroke="#4f46e5" stroke-width="2"/>
+<text x="500.0" y="97" font-size="15" font-weight="600" fill="#1b1b1f" text-anchor="middle">Купить билет Тула — Москва на 6 ноября,</text>
+<text x="500.0" y="115" font-size="15" font-weight="600" fill="#1b1b1f" text-anchor="middle">поезд 07:53, сидячее место, 1 пассажир</text>
+<line x1="500.0" y1="138" x2="500.0" y2="176" stroke="#b9bcc4" stroke-width="2"/>
+<line x1="100.0" y1="176" x2="900.0" y2="176" stroke="#b9bcc4" stroke-width="2"/>
+<line x1="100.0" y1="176" x2="100.0" y2="210" stroke="#b9bcc4" stroke-width="2"/>
+<rect x="7.0" y="210" width="186" height="64" rx="8" fill="#f3f4f6" stroke="#6b7280" stroke-width="1.5"/>
+<text x="100.0" y="239" font-size="13" font-weight="600" fill="#1b1b1f" text-anchor="middle">Задать параметры</text>
+<text x="100.0" y="255" font-size="13" font-weight="600" fill="#1b1b1f" text-anchor="middle">поездки</text>
+<line x1="100.0" y1="274" x2="100.0" y2="447" stroke="#b9bcc4" stroke-width="1.5"/>
+<rect x="15.0" y="300" width="170" height="30" rx="6" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<text x="100.0" y="319" font-size="12" font-weight="400" fill="#33363d" text-anchor="middle">станция отправления</text>
+<rect x="15.0" y="344" width="170" height="30" rx="6" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<text x="100.0" y="363" font-size="12" font-weight="400" fill="#33363d" text-anchor="middle">станция прибытия</text>
+<rect x="15.0" y="388" width="170" height="30" rx="6" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<text x="100.0" y="407" font-size="12" font-weight="400" fill="#33363d" text-anchor="middle">дата</text>
+<rect x="15.0" y="432" width="170" height="30" rx="6" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<text x="100.0" y="451" font-size="12" font-weight="400" fill="#33363d" text-anchor="middle">число пассажиров</text>
+<line x1="300.0" y1="176" x2="300.0" y2="210" stroke="#b9bcc4" stroke-width="2"/>
+<rect x="207.0" y="210" width="186" height="64" rx="8" fill="#f3f4f6" stroke="#6b7280" stroke-width="1.5"/>
+<text x="300.0" y="247" font-size="13" font-weight="600" fill="#1b1b1f" text-anchor="middle">Выбрать поезд</text>
+<line x1="300.0" y1="274" x2="300.0" y2="403" stroke="#b9bcc4" stroke-width="1.5"/>
+<rect x="215.0" y="300" width="170" height="30" rx="6" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<text x="300.0" y="319" font-size="12" font-weight="400" fill="#33363d" text-anchor="middle">отфильтровать список</text>
+<rect x="215.0" y="344" width="170" height="30" rx="6" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<text x="300.0" y="363" font-size="12" font-weight="400" fill="#33363d" text-anchor="middle">сравнить время и цену</text>
+<rect x="215.0" y="388" width="170" height="30" rx="6" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<text x="300.0" y="407" font-size="12" font-weight="400" fill="#33363d" text-anchor="middle">открыть карточку</text>
+<line x1="500.0" y1="176" x2="500.0" y2="210" stroke="#b9bcc4" stroke-width="2"/>
+<rect x="407.0" y="210" width="186" height="64" rx="8" fill="#f3f4f6" stroke="#6b7280" stroke-width="1.5"/>
+<text x="500.0" y="247" font-size="13" font-weight="600" fill="#1b1b1f" text-anchor="middle">Выбрать класс и вагон</text>
+<line x1="500.0" y1="274" x2="500.0" y2="403" stroke="#b9bcc4" stroke-width="1.5"/>
+<rect x="415.0" y="300" width="170" height="30" rx="6" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<text x="500.0" y="319" font-size="12" font-weight="400" fill="#33363d" text-anchor="middle">класс обслуживания</text>
+<rect x="415.0" y="344" width="170" height="30" rx="6" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<text x="500.0" y="363" font-size="12" font-weight="400" fill="#33363d" text-anchor="middle">найти вагон</text>
+<rect x="415.0" y="388" width="170" height="30" rx="6" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<text x="500.0" y="407" font-size="12" font-weight="400" fill="#33363d" text-anchor="middle">сравнить цену вагона</text>
+<line x1="700.0" y1="176" x2="700.0" y2="210" stroke="#b9bcc4" stroke-width="2"/>
+<rect x="607.0" y="210" width="186" height="64" rx="8" fill="#f3f4f6" stroke="#6b7280" stroke-width="1.5"/>
+<text x="700.0" y="247" font-size="13" font-weight="600" fill="#1b1b1f" text-anchor="middle">Выбрать место</text>
+<line x1="700.0" y1="274" x2="700.0" y2="403" stroke="#b9bcc4" stroke-width="1.5"/>
+<rect x="615.0" y="300" width="170" height="30" rx="6" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<text x="700.0" y="319" font-size="12" font-weight="400" fill="#33363d" text-anchor="middle">найти место в схеме</text>
+<rect x="615.0" y="344" width="170" height="30" rx="6" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<text x="700.0" y="363" font-size="12" font-weight="400" fill="#33363d" text-anchor="middle">учесть тип места</text>
+<rect x="615.0" y="388" width="170" height="30" rx="6" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<text x="700.0" y="407" font-size="12" font-weight="400" fill="#33363d" text-anchor="middle">подтвердить выбор</text>
+<line x1="900.0" y1="176" x2="900.0" y2="210" stroke="#b9bcc4" stroke-width="2"/>
+<rect x="807.0" y="210" width="186" height="64" rx="8" fill="#f3f4f6" stroke="#6b7280" stroke-width="1.5"/>
+<text x="900.0" y="239" font-size="13" font-weight="600" fill="#1b1b1f" text-anchor="middle">Ввести данные</text>
+<text x="900.0" y="255" font-size="13" font-weight="600" fill="#1b1b1f" text-anchor="middle">пассажира</text>
+<line x1="900.0" y1="274" x2="900.0" y2="403" stroke="#b9bcc4" stroke-width="1.5"/>
+<rect x="815.0" y="300" width="170" height="30" rx="6" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<text x="900.0" y="319" font-size="12" font-weight="400" fill="#33363d" text-anchor="middle">ФИО</text>
+<rect x="815.0" y="344" width="170" height="30" rx="6" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<text x="900.0" y="363" font-size="12" font-weight="400" fill="#33363d" text-anchor="middle">документ</text>
+<rect x="815.0" y="388" width="170" height="30" rx="6" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+<text x="900.0" y="407" font-size="12" font-weight="400" fill="#33363d" text-anchor="middle">контакты для билета</text>
+</svg>
+</div>
+</body>
+</html>

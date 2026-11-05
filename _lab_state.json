@@ -76,8 +76,8 @@
       "next_step": "Отчёт, PDF и конспект собраны, quality gate пройден; ждём проверки пользователя.",
       "commands": {
         "build_cjm": "py ЛР2/make_cjm.py",
-        "build_report": "py <lab-works skill>/scripts/lab_runner.py --root . --lab 2 --action build-report",
-        "prepare_report": "py <lab-works skill>/scripts/lab_runner.py --root . --lab 2 --action prepare-report"
+        "build_report": "<lab-works skill>/scripts/lab_runner.py --root . --lab 2 --action build-report",
+        "prepare_report": "<lab-works skill>/scripts/lab_runner.py --root . --lab 2 --action prepare-report"
       },
       "command_templates": {
         "poster_capture": "node <lab-works skill>/scripts/cdp.js run --port 9223 --file ЛР2/CJM_map.html --wait 1500 --shot <png>"
@@ -112,6 +112,89 @@
       "verification": {
         "status": "passed",
         "checked_at": "2026-11-02T13:23:17Z",
+        "checks": [
+          "content_references",
+          "artifacts",
+          "report_docx",
+          "report_pdf",
+          "text_docx",
+          "report_structure",
+          "execution_evidence"
+        ],
+        "warnings": []
+      }
+    },
+    "3": {
+      "status": "ready_for_review",
+      "directory": "ЛР3",
+      "methodical_guide": "ЛР3/методичка.docx",
+      "report_number": 3,
+      "theme": "Сравнение интерфейсов одной задачи и UX-аудит",
+      "variant": "9",
+      "deliverable": {
+        "kind": "single",
+        "paths": [
+          "ЛР3/Отчет_ЛР3.docx",
+          "ЛР3/metrics.json",
+          "ЛР3/screenshots/02_heatmap.png"
+        ]
+      },
+      "notes": [
+        "Задача сравнения: купить билет на поезд Тула — Москва на 6 ноября 2026, поезд 104А (07:53), сидячее место, без оплаты.",
+        "Продукт А — «Туту.ру» (агрегатор), продукт Б — сайт перевозчика rzd.ru; инвентарь один и тот же, поэтому различия объясняются интерфейсом.",
+        "Время этапов считается по модели KLM скриптом make_charts.py из ЛР3/metrics.json, а не берётся на глаз.",
+        "На rzd.ru не установлена цепочка сертификатов Минцифры, наблюдение велось с отключённой проверкой сертификата; ограничение описано в отчёте.",
+        "Оплата не выполнялась: «Туту.ру» пройден до формы пассажира, РЖД обрывается на обязательном входе в личный кабинет."
+      ],
+      "next_step": "Отчёт, конспект и PDF собраны, quality gate пройден; ждём проверки пользователя.",
+      "commands": {
+        "build_charts": "py ЛР3/make_charts.py",
+        "cli_evidence": "py ЛР3/make_charts.py",
+        "build_report": "<lab-works skill>/scripts/lab_runner.py --root . --lab 3 --action build-report",
+        "prepare_report": "<lab-works skill>/scripts/lab_runner.py --root . --lab 3 --action prepare-report"
+      },
+      "tooling": {
+        "report_inspector": "bundled:inspect_docx",
+        "report_runner": "bundled:lab_runner",
+        "browser_harness": "bundled:cdp",
+        "cli_capture": "bundled:capture_cdp"
+      },
+      "artifacts": [
+        "ЛР3/методичка.docx",
+        "ЛР3/metrics.json",
+        "ЛР3/make_charts.py",
+        "ЛР3/task_tree.html",
+        "ЛР3/heatmap.html",
+        "ЛР3/bottlenecks.html",
+        "ЛР3/content.json",
+        "ЛР3/content_text.json",
+        "ЛР3/screenshots/01_task_tree.png",
+        "ЛР3/screenshots/02_heatmap.png",
+        "ЛР3/screenshots/03_bottlenecks.png",
+        "ЛР3/screenshots/04_cli_run.png",
+        "ЛР3/screenshots/A1_route.png",
+        "ЛР3/screenshots/A2_results.png",
+        "ЛР3/screenshots/A3_train.png",
+        "ЛР3/screenshots/A4_seatmap.png",
+        "ЛР3/screenshots/A5_seats.png",
+        "ЛР3/screenshots/A6_wagon.png",
+        "ЛР3/screenshots/A7_seat_picked.png",
+        "ЛР3/screenshots/A8_passengers.png",
+        "ЛР3/screenshots/B1_route.png",
+        "ЛР3/screenshots/B2_results.png",
+        "ЛР3/screenshots/B3_wait.png",
+        "ЛР3/screenshots/B4_classes.png",
+        "ЛР3/screenshots/B5_seatmap.png",
+        "ЛР3/screenshots/B6_seat_picked.png",
+        "ЛР3/screenshots/B7_passengers.png",
+        "ЛР3/Отчет_ЛР3.docx",
+        "ЛР3/Отчет_ЛР3.pdf",
+        "ЛР3/text.docx",
+        "ЛР3/quality_gate.json"
+      ],
+      "verification": {
+        "status": "passed",
+        "checked_at": "2026-11-05T08:11:15Z",
         "checks": [
           "content_references",
           "artifacts",

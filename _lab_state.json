@@ -2,7 +2,7 @@
   "version": 2,
   "commit_on_completion": false,
   "project_notes": [
-    "Титульный лист оформляется по образцу Отчет_ЛР5.docx из корня проекта.",
+    "Титульный лист оформляется сборщиком make_docx.py по _context.json (образец — отчёты ЛР1/ЛР2).",
     "Методичка ЛР2 — «Практическая работа 2.docx» — перенесена в ЛР2/методичка.docx."
   ],
   "labs": {
@@ -144,20 +144,19 @@
         "Продукт А — «Туту.ру» (агрегатор), продукт Б — сайт перевозчика rzd.ru; инвентарь один и тот же, поэтому различия объясняются интерфейсом.",
         "Время этапов считается по модели KLM скриптом make_charts.py из ЛР3/metrics.json, а не берётся на глаз.",
         "На rzd.ru не установлена цепочка сертификатов Минцифры, наблюдение велось с отключённой проверкой сертификата; ограничение описано в отчёте.",
-        "Оплата не выполнялась: «Туту.ру» пройден до формы пассажира, РЖД обрывается на обязательном входе в личный кабинет."
+        "Оплата не выполнялась: «Туту.ру» пройден до формы пассажира, РЖД обрывается на обязательном входе в личный кабинет.",
+        "Отчёт пересобран без раздела «Результат выполнения»: методичка ЛР3 не требует скриншота запуска, а обновлённый скилл (v1.0.0+) запрещает отрисованные кадры терминала. Файл 04_cli_run.png удалён."
       ],
-      "next_step": "Отчёт, конспект и PDF собраны, quality gate пройден; ждём проверки пользователя.",
+      "next_step": "Отчёт и конспект пересобраны, quality gate пройден; ждём проверки пользователя.",
       "commands": {
         "build_charts": "py ЛР3/make_charts.py",
-        "cli_evidence": "py ЛР3/make_charts.py",
         "build_report": "<lab-works skill>/scripts/lab_runner.py --root . --lab 3 --action build-report",
         "prepare_report": "<lab-works skill>/scripts/lab_runner.py --root . --lab 3 --action prepare-report"
       },
       "tooling": {
         "report_inspector": "bundled:inspect_docx",
         "report_runner": "bundled:lab_runner",
-        "browser_harness": "bundled:cdp",
-        "cli_capture": "bundled:capture_cdp"
+        "browser_harness": "bundled:cdp"
       },
       "artifacts": [
         "ЛР3/методичка.docx",
@@ -171,7 +170,6 @@
         "ЛР3/screenshots/01_task_tree.png",
         "ЛР3/screenshots/02_heatmap.png",
         "ЛР3/screenshots/03_bottlenecks.png",
-        "ЛР3/screenshots/04_cli_run.png",
         "ЛР3/screenshots/A1_route.png",
         "ЛР3/screenshots/A2_results.png",
         "ЛР3/screenshots/A3_train.png",
@@ -194,7 +192,7 @@
       ],
       "verification": {
         "status": "passed",
-        "checked_at": "2026-11-05T08:11:15Z",
+        "checked_at": "2026-11-10T11:41:47Z",
         "checks": [
           "content_references",
           "artifacts",

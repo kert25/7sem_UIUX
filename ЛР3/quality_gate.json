@@ -3,7 +3,7 @@
   "lab": 3,
   "report_number": 3,
   "status": "passed",
-  "checked_at": "2026-11-05T08:11:15Z",
+  "checked_at": "2026-11-10T11:41:47Z",
   "checks": [
     "content_references",
     "artifacts",
@@ -22,15 +22,14 @@
   "sha256": {
     "_context.json": "144f86279945010f874e9b539946276eff463abcdc61a7be251ac4aca4ed0d32",
     "ЛР3/bottlenecks.html": "c74e3a3edd6d907835b7ba1c7bf353b24b7ada861678ad77d2508526166f5fca",
-    "ЛР3/content.json": "778a0a8ebee38abff39ddabda4f4d8fbebfb210459821a002c1ba9a6efec0d43",
-    "ЛР3/content_text.json": "f42483e2e457592065c9a18f9d6d733aa95ddcca35d47febe5030eb5665f1874",
+    "ЛР3/content.json": "537e144125e758ccc9fb389ec02007ec7aa81039ff84d984bf2e975ca6ff9f10",
+    "ЛР3/content_text.json": "c2f705720f7b79d69ac3f5ea6a2a2fde37424077eb64a32a3cb835dceaaa56fc",
     "ЛР3/heatmap.html": "6a82881af9f88f3374055e4a9f2ca3ef78293649733bfaa11eb1b98c35fc98d6",
     "ЛР3/make_charts.py": "028d8c5fb6ab22e53d6fb98e974dde4c8f25fa359244ed842d1c7b63e63aa7d9",
     "ЛР3/metrics.json": "f1457d709bd2f184cf3593ac07338cec23876714ecc8dc7f7e2aae39f7038959",
     "ЛР3/screenshots/01_task_tree.png": "f718ffd851a18cd30049412f099460cc2cfee618444ccb96344dd685e0b56985",
     "ЛР3/screenshots/02_heatmap.png": "3761d84ed29e96b20155ef7f77c3f090375ff44e5b04684237a08775c3d94c9d",
     "ЛР3/screenshots/03_bottlenecks.png": "8ddc27d8bcc94e247f3da62dd9c6d1ab8d489c9399fa3797eca92508052e431b",
-    "ЛР3/screenshots/04_cli_run.png": "74b3a6287b732219600d17ed629bd764fbedb08baf7eadeb06d839a988e61c48",
     "ЛР3/screenshots/A1_route.png": "136ffc33c79a69991f6acbbc7dc92245e1d62f53305e496894f0b5e6cbbf9f10",
     "ЛР3/screenshots/A2_results.png": "b67843b3004d370177642583eee766f0d2c33bf313eb1645793cff3d7335c939",
     "ЛР3/screenshots/A3_train.png": "bb3232f9231551062d5a03e0cd1c069559e690a73bd05a98a5f50736a2c39c1d",
@@ -47,9 +46,9 @@
     "ЛР3/screenshots/B6_seat_picked.png": "7c69d301c727677fae27ec0324d300670b85118a1ca623868371f26e56b1d8f4",
     "ЛР3/screenshots/B7_passengers.png": "e5dc9a8b811024f6910282feebc1b56061212d07de86e8eb80a4c88f7e153da6",
     "ЛР3/task_tree.html": "6ff6c0f83185c3dbc9a3b05323248c8de763fd44c8f56b50c5d71b84f7b9857b",
-    "ЛР3/text.docx": "e757f7e15f5542d03f7345f69e8256a46896b454cc409af959bdb379297096e2",
+    "ЛР3/text.docx": "d58bb069da59ba67b50e6ecbf8ecc40309b21165171e85dd239dc39ea3a104dc",
     "ЛР3/методичка.docx": "a04f3e42639280c7bf5e759525dab763f6cc4ffc056ca1d273d7897ce2b942a3",
-    "ЛР3/Отчет_ЛР3.docx": "252c5d6c97fee0e6d05e60da3cc31a190b92947f7735048c8ecb73754660f61b",
-    "ЛР3/Отчет_ЛР3.pdf": "b7f26b64970631a0801abf489ca6268552d218a210a353179556f5ffacf5cd99"
+    "ЛР3/Отчет_ЛР3.docx": "c153b2c1a1a6d81aba5c67863d2925006b90fa353ff615d35e22973f9ba0644c",
+    "ЛР3/Отчет_ЛР3.pdf": "239fa1513695346be424566d62102b7610dcb02ff22ee951dba73b710cdd7ba3"
   }
 }

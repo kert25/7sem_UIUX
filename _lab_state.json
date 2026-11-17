@@ -204,6 +204,106 @@
         ],
         "warnings": []
       }
+    },
+    "4": {
+      "status": "in_progress",
+      "directory": "ЛР4",
+      "methodical_guide": "ЛР4/методичка.docx",
+      "report_number": 4,
+      "theme": "Разработка шаблона макета сайта",
+      "variant": "9",
+      "deliverable": {
+        "kind": "single",
+        "paths": [
+          "ЛР4/Отчет_ЛР4.docx",
+          "ЛР4/index.html",
+          "ЛР4/wire_home.html"
+        ]
+      },
+      "notes": [
+        "Макет выполняется в Figma: плагин _figma/plugin строит 6 экранов, 3 листа разметки, карту сайта и дизайн-систему, создаёт цветовые и текстовые стили.",
+        "Плагин собран из частей _figma/plugin/parts скриптом _figma/build_plugin.mjs; иллюстрации букетов генерируются из site.js и вставляются вектором.",
+        "Экспорт PNG для отчёта: плагин вызывает figma.exportAsync и шлёт кадры на _figma/export_server.mjs (127.0.0.1:8765, папка _figma/figma_export).",
+        "Проверка до запуска: _figma/mock_figma.mjs прогоняет плагин на моке API, _figma/render_mock.mjs рисует SVG-превью кадров.",
+        "HTML-прототип из первой итерации остаётся источником дизайна и текстов, но в отчёт пойдут кадры из Figma."
+      ],
+      "next_step": "Запустить плагин Fleur Builder в Figma Desktop, снять кадры и пересобрать отчёт по скриншотам из Figma.",
+      "commands": {
+        "build_report": "<lab-works skill>/scripts/lab_runner.py --root . --lab 4 --action build-report",
+        "prepare_report": "<lab-works skill>/scripts/lab_runner.py --root . --lab 4 --action prepare-report"
+      },
+      "command_templates": {
+        "page_capture": "node <lab-works skill>/scripts/cdp.js run --port 9223 --file <html> --wait 1200 --eval <js> --shot <png>",
+        "full_page_capture": "node <lab-works skill>/scripts/capture_cdp.js --file <html> --out <png> --size 1440,1000 --full-page"
+      },
+      "tooling": {
+        "report_inspector": "bundled:inspect_docx",
+        "report_runner": "bundled:lab_runner",
+        "browser_harness": "bundled:cdp"
+      },
+      "artifacts": [
+        "ЛР4/методичка.docx",
+        "ЛР4/site.css",
+        "ЛР4/site.js",
+        "ЛР4/index.html",
+        "ЛР4/catalog.html",
+        "ЛР4/constructor.html",
+        "ЛР4/delivery.html",
+        "ЛР4/wedding.html",
+        "ЛР4/florist.html",
+        "ЛР4/doc.css",
+        "ЛР4/structure.html",
+        "ЛР4/style.html",
+        "ЛР4/wire_home.html",
+        "ЛР4/wire_constructor.html",
+        "ЛР4/wire_mobile.html",
+        "ЛР4/content.json",
+        "ЛР4/content_text.json",
+        "ЛР4/screenshots/01_structure.png",
+        "ЛР4/screenshots/02_style.png",
+        "ЛР4/screenshots/03_wire_home.png",
+        "ЛР4/screenshots/04_wire_constructor.png",
+        "ЛР4/screenshots/05_wire_mobile.png",
+        "ЛР4/screenshots/06_home.png",
+        "ЛР4/screenshots/07_catalog.png",
+        "ЛР4/screenshots/08_catalog_filters.png",
+        "ЛР4/screenshots/09_constructor.png",
+        "ЛР4/screenshots/10_constructor_selected.png",
+        "ЛР4/screenshots/11_delivery.png",
+        "ЛР4/screenshots/12_wedding.png",
+        "ЛР4/screenshots/13_florist.png",
+        "ЛР4/screenshots/14_footer.png",
+        "ЛР4/screenshots/15_menu.png",
+        "ЛР4/Отчет_ЛР4.docx",
+        "ЛР4/Отчет_ЛР4.pdf",
+        "ЛР4/text.docx",
+        "ЛР4/quality_gate.json",
+        "ЛР4/_figma/README.md",
+        "ЛР4/_figma/build_plugin.mjs",
+        "ЛР4/_figma/export_server.mjs",
+        "ЛР4/_figma/mock_figma.mjs",
+        "ЛР4/_figma/render_mock.mjs",
+        "ЛР4/_figma/plugin/manifest.json",
+        "ЛР4/_figma/plugin/code.js",
+        "ЛР4/_figma/plugin/parts/00_head.js",
+        "ЛР4/_figma/plugin/parts/10_pages.js",
+        "ЛР4/_figma/plugin/parts/20_boards.js",
+        "ЛР4/_figma/plugin/parts/90_run.js"
+      ],
+      "verification": {
+        "status": "passed",
+        "checked_at": "2026-11-17T11:35:00Z",
+        "checks": [
+          "content_references",
+          "artifacts",
+          "report_docx",
+          "report_pdf",
+          "text_docx",
+          "report_structure",
+          "execution_evidence"
+        ],
+        "warnings": []
+      }
     }
   }
 }

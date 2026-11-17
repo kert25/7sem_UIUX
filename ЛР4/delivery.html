@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Доставка и оплата — Флёр</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-list">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.8"/><circle cx="17.5" cy="18" r="1.8"/></svg>Доставка по Туле за 2 часа</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="6" width="18" height="14" rx="3"/><circle cx="12" cy="13" r="3.4"/><path d="M8 6l1.6-2h4.8L16 6"/></svg>Фото букета перед отправкой</span>
+    </div>
+    <div class="topbar-right">
+      <span>Ежедневно 8:00–22:00</span>
+      <a href="#">Личный кабинет</a>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container">
+    <a class="logo" href="index.html">
+      <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8.5" r="2.4"/><path d="M12 6.1C12 3.8 9.8 3 8.8 4.2 7.6 5.6 9 7.4 11 8M12 6.1c0-2.3 2.2-3.1 3.2-1.9 1.2 1.4-.2 3.2-2.2 3.8M9.8 10.5C7.6 10 6.3 12 7.3 13.3c1.1 1.4 3.2.6 3.9-1.3M14.2 10.5c2.2-.5 3.5 1.5 2.5 2.8-1.1 1.4-3.2.6-3.9-1.3M12 14v6"/></svg></span>
+      <span><span class="logo-name">Флёр</span><span class="logo-sub">цветочная мастерская</span></span>
+    </a>
+    <nav class="nav">
+      <div class="nav-item">
+        <button class="nav-link" type="button">Каталог <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="dropdown">
+          <span class="dd-group">Готовые композиции</span>
+          <a href="catalog.html">Букеты <span>38</span></a>
+          <a href="catalog.html">Цветы в коробке <span>12</span></a>
+          <a href="catalog.html">Монобукеты <span>9</span></a>
+          <a href="catalog.html">Сухоцветы <span>7</span></a>
+          <span class="dd-group">Собрать самому</span>
+          <a href="constructor.html">Конструктор букета <span>→</span></a>
+          <a href="constructor.html#addons">Подарки и открытки <span>→</span></a>
+          <span class="dd-note">Не знаете, что выбрать? Флорист подберёт состав по поводу и бюджету — консультация бесплатная.</span>
+        </div>
+      </div>
+      <a class="nav-link" href="constructor.html">Собрать букет</a>
+      <a class="nav-link" href="wedding.html">Свадебные</a>
+      <a class="nav-link" href="florist.html">Флорист</a>
+      <a class="nav-link is-active" href="delivery.html">Доставка</a>
+    </nav>
+    <div class="header-tools">
+      <div class="header-phone"><b>+7 (4872) 55-08-14</b><span>звонок бесплатный</span></div>
+      <button class="icon-btn" type="button" aria-label="Избранное"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 20s-7-4.4-7-9a3.8 3.8 0 017-2.1A3.8 3.8 0 0119 11c0 4.6-7 9-7 9z"/></svg></button>
+      <button class="icon-btn" type="button" aria-label="Корзина"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 8h12l-1.2 11H7.2z"/><path d="M9 8V6.5a3 3 0 016 0V8"/></svg><span class="count-badge">2</span></button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <nav class="breadcrumbs">
+    <a href="index.html">Главная</a>
+    <span class="sep">/</span>
+    <span class="current">Доставка и оплата</span>
+  </nav>
+
+  <div class="page-head">
+    <div>
+      <h1>Доставка и оплата</h1>
+      <p>Свой курьер по Туле и области: привозим в выбранный двухчасовой интервал, перед отправкой присылаем фото букета.</p>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div>
+      <section class="panel">
+        <h2>Когда доставить</h2>
+        <p class="hint">Выберите дату или диапазон: например, 20–22 ноября. Сегодняшние заказы принимаем до 20:00.</p>
+        <div class="calendar-grid" data-calendar data-months="2026-11,2026-12" data-min="2026-11-18"></div>
+        <p class="small" style="margin-top:14px">Выбранная дата: <b data-range-out>не выбран</b></p>
+
+        <div class="summary-group">
+          <h3>Интервал доставки</h3>
+          <div class="slots">
+            <button class="slot" type="button">09:00–12:00</button>
+            <button class="slot is-on" type="button">12:00–15:00</button>
+            <button class="slot" type="button">15:00–18:00</button>
+            <button class="slot" type="button">18:00–22:00</button>
+            <button class="slot" type="button">Как можно быстрее</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Куда и кому</h2>
+        <p class="hint">Получателю позвоним за час до приезда — предупредим о сюрпризе только по вашей просьбе.</p>
+        <div class="form-grid">
+          <div class="field" style="grid-column: span 2"><label for="addr">Адрес в Туле</label><input class="input" id="addr" value="ул. Ленина, 52, кв. 18"></div>
+          <div class="field"><label for="to">Имя получателя</label><input class="input" id="to" value="Мария"></div>
+          <div class="field"><label for="phone">Телефон получателя</label><input class="input" id="phone" value="+7 (910) 555-12-40"></div>
+          <div class="field" style="grid-column: span 2"><label for="comment">Текст открытки или комментарий курьеру</label><input class="input" id="comment" placeholder="Не звонить, просто передать у двери"></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Способ доставки</h2>
+        <div class="tariffs">
+          <label class="tariff is-on">
+            <input type="radio" name="tariff" checked style="display:none">
+            <span class="dot" aria-hidden="true"></span>
+            <span><b>Курьер по Туле</b><span>Доставим за 2 часа в выбранный интервал</span></span>
+            <span class="price-mini">350 ₽</span>
+          </label>
+          <label class="tariff">
+            <input type="radio" name="tariff" style="display:none">
+            <span class="dot" aria-hidden="true"></span>
+            <span><b>Тульская область</b><span>До 20 км от Тулы, 3–4 часа</span></span>
+            <span class="price-mini">590 ₽</span>
+          </label>
+          <label class="tariff">
+            <input type="radio" name="tariff" style="display:none">
+            <span class="dot" aria-hidden="true"></span>
+            <span><b>Самовывоз из мастерской</b><span>ул. Менделеевская, 11 — с 8:00 до 22:00</span></span>
+            <span class="price-mini">бесплатно</span>
+          </label>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Зоны доставки</h2>
+        <table class="plain">
+          <thead><tr><th>Зона</th><th>Срок</th><th>Стоимость</th></tr></thead>
+          <tbody>
+            <tr><td>Центральный, Пролетарский, Заречье</td><td>2 часа</td><td>350 ₽</td></tr>
+            <tr><td>Привокзальный, Советский</td><td>2–3 часа</td><td>350 ₽</td></tr>
+            <tr><td>Тула до 10 км от МКАД</td><td>3 часа</td><td>450 ₽</td></tr>
+            <tr><td>Тульская область до 20 км</td><td>4 часа</td><td>590 ₽</td></tr>
+            <tr><td>Дальше 20 км</td><td>по согласованию</td><td>от 790 ₽</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="panel" id="faq">
+        <h2>Частые вопросы</h2>
+        <div class="faq" style="margin-top:16px">
+          <details class="qa" open>
+            <summary>Можно ли заказать букет на сегодня?</summary>
+            <p>Да, если заказ оформлен до 20:00. Такой букет собирается вне очереди, доплата 350 ₽, интервал — ближайшие два часа.</p>
+          </details>
+          <details class="qa">
+            <summary>Что, если получателя нет дома?</summary>
+            <p>Курьер звонит получателю и ждёт 15 минут. Если дверь не открыли, букет возвращается в мастерскую, повторный выезд — 200 ₽.</p>
+          </details>
+          <details class="qa">
+            <summary>Можно отправить букет анонимно?</summary>
+            <p>Да. В открытке не указываем отправителя, а курьер не называет имя заказчика — только передаёт букет.</p>
+          </details>
+          <details class="qa">
+            <summary>Как можно оплатить?</summary>
+            <p>Картой курьеру, наличными или по QR-коду СБП. Для юридических лиц выставляем счёт на оплату.</p>
+          </details>
+          <details class="qa">
+            <summary>Пришлёте фото букета?</summary>
+            <p>Да, фото отправляем в мессенджер сразу после сборки. Если состав не понравился — заменим цветы до выезда курьера.</p>
+          </details>
+        </div>
+      </section>
+    </div>
+
+    <aside class="summary">
+      <div class="panel">
+        <h2>Ваш заказ</h2>
+        <div style="display:flex;gap:12px;align-items:center;margin:14px 0">
+          <div class="flower-thumb" data-bouquet='{"items":[{"type":"rose","count":15}],"wrap":"kraft","ribbon":"#bf6a4e","seed":5}'></div>
+          <div><b>Рандеву</b><div class="small muted">15 роз, крафт, лента</div></div>
+          <b style="margin-left:auto">3 450 ₽</b>
+        </div>
+        <ul class="summary-lines">
+          <li><span>Букет</span><b>3 450 ₽</b></li>
+          <li><span>Доставка по Туле</span><b>350 ₽</b></li>
+        </ul>
+        <div class="total"><span>Итого</span><b>3 800 ₽</b></div>
+        <button class="btn btn-primary btn-block" type="button" style="margin-top:14px" data-cart>Оплатить заказ</button>
+        <p class="small muted center" style="margin:10px 0 0">Оплата при получении или картой онлайн</p>
+      </div>
+
+      <div class="panel">
+        <h2 style="font-size:18px">Поможем с выбором</h2>
+        <p class="small muted" style="margin:8px 0 14px">Флорист ответит на вопросы и подберёт букет под повод.</p>
+        <a class="btn btn-soft btn-block" href="tel:+74872550814">+7 (4872) 55-08-14</a>
+        <p class="small muted" style="margin:10px 0 0">Ежедневно с 8:00 до 22:00</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="index.html">
+          <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8.5" r="2.4"/><path d="M12 6.1C12 3.8 9.8 3 8.8 4.2 7.6 5.6 9 7.4 11 8M12 6.1c0-2.3 2.2-3.1 3.2-1.9 1.2 1.4-.2 3.2-2.2 3.8M9.8 10.5C7.6 10 6.3 12 7.3 13.3c1.1 1.4 3.2.6 3.9-1.3M14.2 10.5c2.2-.5 3.5 1.5 2.5 2.8-1.1 1.4-3.2.6-3.9-1.3M12 14v6"/></svg></span>
+          <span><span class="logo-name">Флёр</span><span class="logo-sub">цветочная мастерская</span></span>
+        </a>
+        <p>Тула, ул. Менделеевская, 11. Ежедневно 8:00–22:00.</p>
+        <div class="subscribe">
+          <input type="email" placeholder="Почта для новостей" aria-label="Почта для подписки">
+          <button class="btn btn-terra btn-sm" type="submit">Подписаться</button>
+        </div>
+      </div>
+      <div>
+        <h4>Каталог</h4>
+        <a href="catalog.html">Готовые букеты</a>
+        <a href="constructor.html">Собрать свой</a>
+        <a href="wedding.html">Свадебные букеты</a>
+        <a href="constructor.html#addons">Подарки и открытки</a>
+      </div>
+      <div>
+        <h4>Помощь</h4>
+        <a href="delivery.html">Доставка и оплата</a>
+        <a href="delivery.html#faq">Вопросы и ответы</a>
+        <a href="florist.html">Услуги флориста</a>
+        <a href="#">Возврат букета</a>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <a href="tel:+74872550814">+7 (4872) 55-08-14</a>
+        <a href="mailto:hello@fleur-tula.ru">hello@fleur-tula.ru</a>
+        <a href="#">Telegram</a>
+        <a href="#">ВКонтакте</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Флёр. Цветочная мастерская, Тула.</span>
+      <div class="pay"><span>Visa</span><span>Mastercard</span><span>МИР</span><span>СБП</span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

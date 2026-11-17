@@ -1,0 +1,11 @@
+{
+  "name": "Fleur Builder",
+  "id": "fleur-builder-lr4-2026",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": ["figma"],
+  "networkAccess": {
+    "allowedDomains": ["http://localhost:8765"],
+    "reasoning": "Локальный сервер сохраняет PNG-кадры макета для отчёта по лабораторной работе."
+  }
+}

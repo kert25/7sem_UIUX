@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Дизайн-система — Флёр</title>
+<link rel="stylesheet" href="doc.css">
+</head>
+<body>
+<div class="page">
+  <div class="doc-head">
+    <div>
+      <div class="kicker">Практическая работа № 4 · графическая разметка</div>
+      <h1>Дизайн-система макета: сетка, цвет, шрифт, компоненты</h1>
+    </div>
+    <div class="meta">Контейнер 1240 px · 12 колонок<br>Межколонник 24 px · поля 32 px<br>Брейкпоинты 1080 / 640 px</div>
+  </div>
+
+  <h2 class="sec">Модульная сетка</h2>
+  <p class="note">Контейнер 1240 px, 12 колонок по 80 px, межколонник 24 px. Контентные блоки занимают 3, 4, 6 или 12 колонок; на 1080 px сетка становится 2-колоночной, на 640 px — одноколоночной.</p>
+  <div class="grid-demo">
+    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+    <span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
+  </div>
+  <div class="dim"><span>поле 32 px</span><span>колонка 80 px · межколонник 24 px</span><span>поле 32 px</span></div>
+
+  <h2 class="sec">Палитра</h2>
+  <div class="palette">
+    <div class="sw"><div class="c" style="background:#1e3a2b"></div><div class="t"><b>Тёмная зелень</b><code>#1E3A2B</code><br>текст, кнопки, подвал</div></div>
+    <div class="sw"><div class="c" style="background:#fbf7f0"></div><div class="t"><b>Сливочный</b><code>#FBF7F0</code><br>фон страниц</div></div>
+    <div class="sw"><div class="c" style="background:#f4ded9"></div><div class="t"><b>Пудровый</b><code>#F4DED9</code><br>акцентные блоки</div></div>
+    <div class="sw"><div class="c" style="background:#bf6a4e"></div><div class="t"><b>Терракота</b><code>#BF6A4E</code><br>CTA, подписи, фокус</div></div>
+    <div class="sw"><div class="c" style="background:#c8a25a"></div><div class="t"><b>Золото</b><code>#C8A25A</code><br>рейтинг, декор</div></div>
+    <div class="sw"><div class="c" style="background:#736c61"></div><div class="t"><b>Тёплый серый</b><code>#736C61</code><br>второстепенный текст</div></div>
+  </div>
+  <p class="note" style="margin-top:10px">Контраст текста к фону: 12,6 : 1 для основного и 5,4 : 1 для второстепенного — выше порога WCAG AA (4,5 : 1).</p>
+
+  <h2 class="sec">Типографика</h2>
+  <div class="type-row"><span class="spec">H1 · Georgia 58 / 1.05</span><span class="sample" style="font-size:58px">Букеты, которые говорят за вас</span></div>
+  <div class="type-row"><span class="spec">H2 · Georgia 36 / 1.15</span><span class="sample" style="font-size:36px">Хиты недели</span></div>
+  <div class="type-row"><span class="spec">H3 · Georgia 22 / 1.3</span><span class="sample" style="font-size:22px">Пудровый рассвет</span></div>
+  <div class="type-row"><span class="spec">Текст · Segoe UI 16 / 1.55</span><span style="font-size:16px">Срезаем свежие цветы каждое утро и привозим по Туле за два часа.</span></div>
+  <div class="type-row"><span class="spec">Подпись · Segoe UI 13</span><span style="font-size:13px;color:#746c60">Цена и вид букета обновляются на каждом шаге</span></div>
+
+  <h2 class="sec">Компоненты</h2>
+  <div class="components">
+    <div class="comp">
+      <div class="cap">Кнопки</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <span class="btn-demo">В корзину</span>
+        <span class="btn-demo outline">Собрать свой</span>
+      </div>
+    </div>
+    <div class="comp">
+      <div class="cap">Чекбокс и радиокнопка</div>
+      <div class="check-demo"><span class="box-d on"></span>Пионы</div>
+      <div class="check-demo"><span class="box-d"></span>Гортензия</div>
+      <div class="check-demo"><span class="radio-d"></span>День рождения</div>
+    </div>
+    <div class="comp">
+      <div class="cap">Поле ввода</div>
+      <div style="height:34px;border:1px solid #d9cebd;border-radius:10px;display:flex;align-items:center;padding:0 10px;font-size:12px;color:#746c60">+7 (4872) 55-08-14</div>
+    </div>
+    <div class="comp">
+      <div class="cap">Метка и цена</div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="background:#bf6a4e;color:#fff;border-radius:999px;padding:4px 10px;font-size:10.5px;font-weight:700">ХИТ</span>
+        <b style="font-size:16px">3 450 ₽</b>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

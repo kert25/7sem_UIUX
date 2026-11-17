@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Разметка конструктора — Флёр</title>
+<link rel="stylesheet" href="doc.css">
+</head>
+<body>
+<div class="page">
+  <div class="doc-head">
+    <div>
+      <div class="kicker">Практическая работа № 4 · графическая разметка</div>
+      <h1>Конструктор букета: рабочая область</h1>
+    </div>
+    <div class="meta">Две колонки: 1,35 : 1<br>Левая — выбор, правая — превью и итог<br>Правая колонка закреплена (sticky)</div>
+  </div>
+  <p class="note">Страница повторяет логику сборки букета: сверху вниз цветы → упаковка → дополнения, а итоговая цена и превью всегда остаются на виду в правой колонке.</p>
+
+  <div class="wire">
+    <div class="wf">
+      <div class="wgrid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+      <div class="blk wf-top"><span class="badge-n">1</span>Верхняя полоса и хедер — как на всех страницах</div>
+
+      <div class="row" style="grid-template-columns: 7fr 5fr">
+        <div class="blk" style="height:34px;justify-content:flex-start;padding-left:12px"><span class="badge-n">2</span>Хлебные крошки: Главная / Каталог / Конструктор</div>
+        <div class="blk line" style="height:34px">Мини-корзина, шаг 1 из 4</div>
+      </div>
+
+      <div class="blk" style="height:44px;justify-content:flex-start;padding-left:14px;gap:26px">
+        <span class="badge-n">3</span><span>Шаг 1 · Цветы</span><span>Шаг 2 · Упаковка</span><span>Шаг 3 · Дополнения</span><span>Шаг 4 · Доставка</span>
+      </div>
+
+      <div class="row" style="grid-template-columns: 7fr 5fr">
+        <div style="display:grid;gap:10px;grid-template-rows:auto auto 1fr">
+          <div class="blk tall" style="height:210px;flex-direction:column;align-items:stretch;gap:6px">
+            <span class="badge-n">4</span>
+            <b style="font-size:12px">Выберите цветы</b>
+            <span class="blk line" style="height:30px">Роза · 190 ₽ · − 9 +</span>
+            <span class="blk line" style="height:30px">Пион · 420 ₽ · − 3 +</span>
+            <span class="blk line" style="height:30px">Тюльпан · 90 ₽ · − 0 +</span>
+            <span class="blk line" style="height:30px">Эвкалипт · 60 ₽ · − 5 +</span>
+          </div>
+          <div class="blk tall" style="height:118px;flex-direction:column;align-items:stretch;gap:6px">
+            <span class="badge-n">5</span>
+            <b style="font-size:12px">Упаковка и лента</b>
+            <span class="blk line" style="height:26px">Крафт</span>
+            <span class="blk line" style="height:26px">Плёнка · 150 ₽</span>
+            <span class="blk line" style="height:26px">Коробка · 350 ₽</span>
+          </div>
+          <div class="blk tall" style="min-height:92px;flex-direction:column;align-items:stretch;gap:6px">
+            <span class="badge-n">6</span>
+            <b style="font-size:12px">Дополнения</b>
+            <span class="blk line" style="height:26px">Открытка 120 ₽ · Игрушка 490 ₽ · Доставка 350 ₽</span>
+          </div>
+        </div>
+
+        <div style="display:grid;gap:10px;grid-template-rows:auto auto 1fr">
+          <div class="blk img" style="height:196px"><span class="badge-n">7</span>Превью букета: 600 × 700, обновляется</div>
+          <div class="blk tall" style="height:190px;flex-direction:column;align-items:stretch;gap:6px">
+            <span class="badge-n">8</span>
+            <b style="font-size:12px">Ваш букет · итог</b>
+            <span class="blk line" style="height:24px">Роза × 9 — 1 710 ₽</span>
+            <span class="blk line" style="height:24px">Пион × 3 — 1 260 ₽</span>
+            <span class="blk line" style="height:24px">Упаковка · доставка</span>
+            <span class="blk" style="height:32px;background:#d9cbba">Итого 3 860 ₽ · В корзину</span>
+          </div>
+          <div class="blk line" style="min-height:96px">Подсказка флориста · фото до отправки</div>
+        </div>
+      </div>
+
+      <div class="blk wf-foot" style="height:60px"><span class="badge-n">9</span>Футер — общий для всех страниц</div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <div><b>1</b><span>Общая шапка: полоса 40 px + хедер 84 px</span></div>
+    <div><b>2</b><span>Крошки и мини-корзина: где я и что собрал</span></div>
+    <div><b>3</b><span>Индикатор шагов: 4 этапа, текущий выделен</span></div>
+    <div><b>4</b><span>Список цветов: 9 позиций, степпер − / +</span></div>
+    <div><b>5</b><span>Упаковка: 4 варианта, радиокнопки, цена</span></div>
+    <div><b>6</b><span>Дополнения: открытка, игрушка, доставка</span></div>
+    <div><b>7</b><span>Превью: живая иллюстрация состава</span></div>
+    <div><b>8</b><span>Итог: строки заказа, цена, CTA — sticky</span></div>
+    <div><b>9</b><span>Общий футер: навигация и контакты</span></div>
+  </div>
+</div>
+</body>
+</html>

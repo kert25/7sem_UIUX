@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Мобильная разметка — Флёр</title>
+<link rel="stylesheet" href="doc.css">
+</head>
+<body>
+<div class="page" style="width:1180px">
+  <div class="doc-head">
+    <div>
+      <div class="kicker">Практическая работа № 4 · графическая разметка</div>
+      <h1>Адаптив: мобильная версия главной</h1>
+    </div>
+    <div class="meta">Экран 375 px · поля 18 px<br>Одна колонка, кнопки 44 px<br>Брейкпоинты 1080 / 640 px</div>
+  </div>
+  <p class="note">На мобильном сетка складывается в одну колонку, меню уходит в бургер, а второстепенные блоки — в аккордеон. Порядок блоков сохраняет сценарий: сначала выбор букета, потом условия доставки.</p>
+
+  <div class="two">
+    <div class="mobile-frame">
+      <div class="wf">
+        <div class="blk" style="height:20px"><span class="badge-n">1</span>Доставка 2 ч</div>
+        <div class="blk" style="height:38px;justify-content:space-between;padding:0 10px"><span>☰</span><span>Флёр</span><span>♡ · 🛍</span></div>
+        <div class="blk img" style="height:120px"><span class="badge-n">2</span>Слайдер 300 px</div>
+        <div class="blk tall" style="height:84px;flex-direction:column;align-items:flex-start;gap:4px">
+          <span class="badge-n">3</span><b style="font-size:11px">H1 — 34 px</b><span>Кнопка на всю ширину</span>
+        </div>
+        <div class="row" style="grid-template-columns: 1fr 1fr">
+          <div class="blk" style="height:44px"><span class="badge-n">4</span>Категория</div>
+          <div class="blk" style="height:44px">Категория</div>
+        </div>
+        <div class="blk" style="height:96px"><span class="badge-n">5</span>Карточка букета — на всю ширину</div>
+        <div class="blk" style="height:40px"><span class="badge-n">6</span>Преимущества — списком</div>
+        <div class="blk" style="height:56px"><span class="badge-n">7</span>Футер, колонки в аккордеон</div>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="sec" style="margin-top:0">Что меняется на мобильном</h2>
+      <table class="plain" style="width:100%">
+        <thead><tr><th style="padding:8px 10px">Блок</th><th style="padding:8px 10px">Решение</th></tr></thead>
+        <tbody>
+          <tr><td style="padding:8px 10px">Хедер</td><td style="padding:8px 10px">Меню скрывается, остаётся бургер 44 × 44</td></tr>
+          <tr><td style="padding:8px 10px">Герой</td><td style="padding:8px 10px">Две колонки → одна: текст, под ним слайдер</td></tr>
+          <tr><td style="padding:8px 10px">Категории</td><td style="padding:8px 10px">4 → 2 × 2, иконка над подписью</td></tr>
+          <tr><td style="padding:8px 10px">Каталог</td><td style="padding:8px 10px">Карточки 1 в ряд, фильтры — в шторке</td></tr>
+          <tr><td style="padding:8px 10px">Конструктор</td><td style="padding:8px 10px">Превью и итог — под списком цветов</td></tr>
+          <tr><td style="padding:8px 10px">Футер</td><td style="padding:8px 10px">Колонки → аккордеон, контакты сверху</td></tr>
+        </tbody>
+      </table>
+
+      <h2 class="sec">Правила адаптива</h2>
+      <ul style="margin:0;padding-left:18px;font-size:12.5px;line-height:1.9;color:#4a443b">
+        <li>Минимальная зона касания — 44 × 44 px, отступ между целями 8 px.</li>
+        <li>Шрифт тела не меньше 16 px, иначе браузер зумит формы.</li>
+        <li>Горизонтальной прокрутки нет: изображения и таблицы сжимаются.</li>
+        <li>Пагинация заменяется кнопкой «Показать ещё».</li>
+        <li>Порядок блоков не меняется — меняется только раскладка.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="legend" style="grid-template-columns: repeat(4, 1fr)">
+    <div><b>1</b><span>Полоса доставки: 20 px, мелкий кегль</span></div>
+    <div><b>2</b><span>Слайдер: 300 px, свайп, точки снизу</span></div>
+    <div><b>3</b><span>Герой: H1 34 px + CTA на всю ширину</span></div>
+    <div><b>4</b><span>Категории: сетка 2 × 2</span></div>
+    <div><b>5</b><span>Карточка: 1 в ряд, горизонтальная</span></div>
+    <div><b>6</b><span>Преимущества: список с иконками</span></div>
+    <div><b>7</b><span>Футер: аккордеон вместо колонок</span></div>
+  </div>
+</div>
+</body>
+</html>

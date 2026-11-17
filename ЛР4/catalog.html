@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Каталог готовых букетов — Флёр</title>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-list">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.8"/><circle cx="17.5" cy="18" r="1.8"/></svg>Доставка по Туле за 2 часа</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="6" width="18" height="14" rx="3"/><circle cx="12" cy="13" r="3.4"/><path d="M8 6l1.6-2h4.8L16 6"/></svg>Фото букета перед отправкой</span>
+    </div>
+    <div class="topbar-right">
+      <span>Ежедневно 8:00–22:00</span>
+      <a href="#">Личный кабинет</a>
+    </div>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container">
+    <a class="logo" href="index.html">
+      <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8.5" r="2.4"/><path d="M12 6.1C12 3.8 9.8 3 8.8 4.2 7.6 5.6 9 7.4 11 8M12 6.1c0-2.3 2.2-3.1 3.2-1.9 1.2 1.4-.2 3.2-2.2 3.8M9.8 10.5C7.6 10 6.3 12 7.3 13.3c1.1 1.4 3.2.6 3.9-1.3M14.2 10.5c2.2-.5 3.5 1.5 2.5 2.8-1.1 1.4-3.2.6-3.9-1.3M12 14v6"/></svg></span>
+      <span><span class="logo-name">Флёр</span><span class="logo-sub">цветочная мастерская</span></span>
+    </a>
+    <nav class="nav">
+      <div class="nav-item">
+        <button class="nav-link is-active" type="button">Каталог <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="dropdown">
+          <span class="dd-group">Готовые композиции</span>
+          <a href="catalog.html">Букеты <span>38</span></a>
+          <a href="catalog.html">Цветы в коробке <span>12</span></a>
+          <a href="catalog.html">Монобукеты <span>9</span></a>
+          <a href="catalog.html">Сухоцветы <span>7</span></a>
+          <span class="dd-group">Собрать самому</span>
+          <a href="constructor.html">Конструктор букета <span>→</span></a>
+          <a href="constructor.html#addons">Подарки и открытки <span>→</span></a>
+          <span class="dd-note">Не знаете, что выбрать? Флорист подберёт состав по поводу и бюджету — консультация бесплатная.</span>
+        </div>
+      </div>
+      <a class="nav-link" href="constructor.html">Собрать букет</a>
+      <a class="nav-link" href="wedding.html">Свадебные</a>
+      <a class="nav-link" href="florist.html">Флорист</a>
+      <a class="nav-link" href="delivery.html">Доставка</a>
+    </nav>
+    <div class="header-tools">
+      <div class="header-phone"><b>+7 (4872) 55-08-14</b><span>звонок бесплатный</span></div>
+      <button class="icon-btn" type="button" aria-label="Избранное"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 20s-7-4.4-7-9a3.8 3.8 0 017-2.1A3.8 3.8 0 0119 11c0 4.6-7 9-7 9z"/></svg></button>
+      <button class="icon-btn" type="button" aria-label="Корзина"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 8h12l-1.2 11H7.2z"/><path d="M9 8V6.5a3 3 0 016 0V8"/></svg><span class="count-badge">2</span></button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <nav class="breadcrumbs">
+    <a href="index.html">Главная</a>
+    <span class="sep">/</span>
+    <a href="catalog.html">Каталог</a>
+    <span class="sep">/</span>
+    <span class="current">Готовые букеты</span>
+  </nav>
+
+  <div class="page-head">
+    <div>
+      <h1>Готовые букеты</h1>
+      <p>Собраны флористами утром: 38 композиций из свежих цветов. Можно заказать как есть или изменить состав в конструкторе.</p>
+    </div>
+  </div>
+
+  <div class="catalog-layout">
+    <aside class="filters">
+      <h2>Фильтры</h2>
+      <p class="small muted" style="margin:2px 0 0">Подберите букет по поводу и цветам</p>
+
+      <div class="filter-group">
+        <h3>Повод</h3>
+        <label class="radio"><input type="radio" name="occasion" value="all" data-f="occasion" checked><span class="dot"></span>Любой повод</label>
+        <label class="radio"><input type="radio" name="occasion" value="birthday" data-f="occasion"><span class="dot"></span>День рождения</label>
+        <label class="radio"><input type="radio" name="occasion" value="date" data-f="occasion"><span class="dot"></span>Свидание</label>
+        <label class="radio"><input type="radio" name="occasion" value="wedding" data-f="occasion"><span class="dot"></span>Свадьба</label>
+        <label class="radio"><input type="radio" name="occasion" value="no-reason" data-f="occasion"><span class="dot"></span>Без повода</label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Цветы</h3>
+        <label class="check"><input type="checkbox" value="rose" data-f="flower"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4.5 4.5L19 7"/></svg></span>Розы <span class="cnt">14</span></label>
+        <label class="check"><input type="checkbox" value="peony" data-f="flower"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4.5 4.5L19 7"/></svg></span>Пионы <span class="cnt">7</span></label>
+        <label class="check"><input type="checkbox" value="tulip" data-f="flower"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4.5 4.5L19 7"/></svg></span>Тюльпаны <span class="cnt">6</span></label>
+        <label class="check"><input type="checkbox" value="hydrangea" data-f="flower"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4.5 4.5L19 7"/></svg></span>Гортензия <span class="cnt">5</span></label>
+        <label class="check"><input type="checkbox" value="sunflower" data-f="flower"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4.5 4.5L19 7"/></svg></span>Подсолнухи <span class="cnt">3</span></label>
+        <label class="check"><input type="checkbox" value="chamomile" data-f="flower"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4.5 4.5L19 7"/></svg></span>Ромашки <span class="cnt">5</span></label>
+        <label class="check"><input type="checkbox" value="eucalyptus" data-f="flower"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4.5 4.5L19 7"/></svg></span>Сухоцветы <span class="cnt">9</span></label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Цена, ₽</h3>
+        <div class="range-wrap">
+          <input type="range" min="2000" max="6000" step="100" value="6000" data-price-range>
+          <div class="range-values"><span>2 000 ₽</span><span data-price-out>6 000 ₽</span></div>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <h3>Упаковка</h3>
+        <label class="check"><input type="checkbox" value="kraft" data-f="wrap"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4.5 4.5L19 7"/></svg></span>Крафт</label>
+        <label class="check"><input type="checkbox" value="film" data-f="wrap"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4.5 4.5L19 7"/></svg></span>Плёнка</label>
+        <label class="check"><input type="checkbox" value="box" data-f="wrap"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l4.5 4.5L19 7"/></svg></span>Коробка</label>
+      </div>
+
+      <div class="filter-actions">
+        <button class="btn btn-primary btn-sm btn-block" type="button">Показать букеты</button>
+        <button class="btn btn-soft btn-sm btn-block" type="button" data-reset>Сбросить</button>
+      </div>
+    </aside>
+
+    <div>
+      <div class="results-bar">
+        <span class="results-count">Найдено <b data-count>8</b> из 38 букетов</span>
+        <div class="select-wrap">
+          <select data-sort aria-label="Сортировка">
+            <option value="popular">Сначала популярные</option>
+            <option value="cheap">Сначала дешевле</option>
+            <option value="expensive">Сначала дороже</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid-3" data-products>
+        <article class="card" data-price="3450" data-flowers="rose" data-occasion="birthday date" data-wrap="kraft">
+          <div class="card-art"><div data-bouquet='{"items":[{"type":"rose","count":15}],"wrap":"kraft","ribbon":"#bf6a4e","seed":5}'></div></div>
+          <div class="card-labels"><span class="tag tag-terra">Хит</span></div>
+          <button class="fav" type="button" aria-label="В избранное"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a3.8 3.8 0 017-2.1A3.8 3.8 0 0119 11c0 4.6-7 9-7 9z"/></svg></button>
+          <div class="card-body"><h3>Рандеву</h3><div class="card-desc">15 роз пионовидных, крафт, атласная лента</div>
+            <div class="card-foot"><span class="price">3 450 ₽</span><button class="add-btn" data-cart type="button">В корзину</button></div></div>
+        </article>
+
+        <article class="card" data-price="4900" data-flowers="peony hydrangea eucalyptus" data-occasion="date wedding" data-wrap="film">
+          <div class="card-art"><div data-bouquet='{"items":[{"type":"peony","count":7},{"type":"hydrangea","count":2},{"type":"eucalyptus","count":5}],"wrap":"film","ribbon":"#d98e86","seed":31}'></div></div>
+          <div class="card-labels"><span class="tag">Новинка</span></div>
+          <button class="fav" type="button" aria-label="В избранное"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a3.8 3.8 0 017-2.1A3.8 3.8 0 0119 11c0 4.6-7 9-7 9z"/></svg></button>
+          <div class="card-body"><h3>Пудровый рассвет</h3><div class="card-desc">Пионы, гортензия, эвкалипт, матовая плёнка</div>
+            <div class="card-foot"><span class="price">4 900 ₽</span><button class="add-btn" data-cart type="button">В корзину</button></div></div>
+        </article>
+
+        <article class="card" data-price="2890" data-flowers="tulip" data-occasion="birthday date" data-wrap="kraft">
+          <div class="card-art"><div data-bouquet='{"items":[{"type":"tulip","count":25}],"wrap":"kraft","ribbon":"#c8a25a","seed":17}'></div></div>
+          <div class="card-labels"><span class="tag">Сезон</span></div>
+          <button class="fav" type="button" aria-label="В избранное"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a3.8 3.8 0 017-2.1A3.8 3.8 0 0119 11c0 4.6-7 9-7 9z"/></svg></button>
+          <div class="card-body"><h3>Тюльпанный май</h3><div class="card-desc">25 тюльпанов, крафт-бумага, лента в тон</div>
+            <div class="card-foot"><span class="price">2 890 ₽</span><button class="add-btn" data-cart type="button">В корзину</button></div></div>
+        </article>
+
+        <article class="card" data-price="2250" data-flowers="chamomile lavender eucalyptus" data-occasion="no-reason birthday" data-wrap="kraft">
+          <div class="card-art"><div data-bouquet='{"items":[{"type":"chamomile","count":9},{"type":"lavender","count":5},{"type":"eucalyptus","count":4}],"wrap":"kraft","ribbon":"#c8a25a","seed":9}'></div></div>
+          <div class="card-labels"><span class="tag">Сухоцветы</span></div>
+          <button class="fav" type="button" aria-label="В избранное"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a3.8 3.8 0 017-2.1A3.8 3.8 0 0119 11c0 4.6-7 9-7 9z"/></svg></button>
+          <div class="card-body"><h3>Полевой</h3><div class="card-desc">Ромашка, лаванда, эвкалипт, крафт</div>
+            <div class="card-foot"><span class="price">2 250 ₽</span><button class="add-btn" data-cart type="button">В корзину</button></div></div>
+        </article>
+
+        <article class="card" data-price="2690" data-flowers="sunflower chamomile eucalyptus" data-occasion="birthday no-reason" data-wrap="basket">
+          <div class="card-art"><div data-bouquet='{"items":[{"type":"sunflower","count":5},{"type":"chamomile","count":5},{"type":"eucalyptus","count":3}],"wrap":"basket","ribbon":"#bf6a4e","seed":13}'></div></div>
+          <div class="card-labels"><span class="tag">Хит</span></div>
+          <button class="fav" type="button" aria-label="В избранное"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a3.8 3.8 0 017-2.1A3.8 3.8 0 0119 11c0 4.6-7 9-7 9z"/></svg></button>
+          <div class="card-body"><h3>Солнечный</h3><div class="card-desc">Подсолнухи и ромашки в плетёной корзине</div>
+            <div class="card-foot"><span class="price">2 690 ₽</span><button class="add-btn" data-cart type="button">В корзину</button></div></div>
+        </article>
+
+        <article class="card" data-price="4200" data-flowers="hydrangea eucalyptus" data-occasion="date" data-wrap="film">
+          <div class="card-art"><div data-bouquet='{"items":[{"type":"hydrangea","count":7},{"type":"eucalyptus","count":3}],"wrap":"film","ribbon":"#e8ddcb","seed":27}'></div></div>
+          <div class="card-labels"><span class="tag">Монобукет</span></div>
+          <button class="fav" type="button" aria-label="В избранное"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a3.8 3.8 0 017-2.1A3.8 3.8 0 0119 11c0 4.6-7 9-7 9z"/></svg></button>
+          <div class="card-body"><h3>Облако</h3><div class="card-desc">Гортензия трёх оттенков, эвкалипт</div>
+            <div class="card-foot"><span class="price">4 200 ₽</span><button class="add-btn" data-cart type="button">В корзину</button></div></div>
+        </article>
+
+        <article class="card" data-price="3900" data-flowers="rose" data-occasion="no-reason date" data-wrap="box">
+          <div class="card-art"><div data-bouquet='{"items":[{"type":"rose","count":5}],"wrap":"box","ribbon":"#bf6a4e","seed":3}'></div></div>
+          <div class="card-labels"><span class="tag">В коробке</span></div>
+          <button class="fav" type="button" aria-label="В избранное"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a3.8 3.8 0 017-2.1A3.8 3.8 0 0119 11c0 4.6-7 9-7 9z"/></svg></button>
+          <div class="card-body"><h3>Минимализм</h3><div class="card-desc">5 роз в шляпной коробке, без лишних деталей</div>
+            <div class="card-foot"><span class="price">3 900 ₽</span><button class="add-btn" data-cart type="button">В корзину</button></div></div>
+        </article>
+
+        <article class="card" data-price="5400" data-flowers="white_rose peony eucalyptus" data-occasion="wedding" data-wrap="film">
+          <div class="card-art"><div data-bouquet='{"items":[{"type":"white_rose","count":9},{"type":"peony","count":3},{"type":"eucalyptus","count":4}],"wrap":"film","ribbon":"#e8ddcb","seed":44}'></div></div>
+          <div class="card-labels"><span class="tag">Свадебный</span></div>
+          <button class="fav" type="button" aria-label="В избранное"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a3.8 3.8 0 017-2.1A3.8 3.8 0 0119 11c0 4.6-7 9-7 9z"/></svg></button>
+          <div class="card-body"><h3>Утро невесты</h3><div class="card-desc">Белые розы, пионы, эвкалипт, лента под платье</div>
+            <div class="card-foot"><span class="price">5 400 ₽</span><button class="add-btn" data-cart type="button">В корзину</button></div></div>
+        </article>
+      </div>
+
+      <p class="note-bar" data-empty hidden>По выбранным фильтрам букетов нет. Сбросьте фильтры или соберите букет в конструкторе.</p>
+
+      <nav class="pagination" aria-label="Страницы каталога">
+        <button class="page-btn arrow" type="button" aria-label="Предыдущая">‹</button>
+        <button class="page-btn is-active" type="button">1</button>
+        <button class="page-btn" type="button">2</button>
+        <button class="page-btn" type="button">3</button>
+        <span class="dots">…</span>
+        <button class="page-btn" type="button">8</button>
+        <button class="page-btn arrow" type="button" aria-label="Следующая">›</button>
+      </nav>
+
+      <div class="promo">
+        <div>
+          <h3>Не нашли нужный букет?</h3>
+          <p>Соберите свой: выберите цветы поштучно, упаковку и открытку — цена обновится сразу.</p>
+        </div>
+        <a class="btn btn-primary" href="constructor.html">Собрать свой букет</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="index.html">
+          <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8.5" r="2.4"/><path d="M12 6.1C12 3.8 9.8 3 8.8 4.2 7.6 5.6 9 7.4 11 8M12 6.1c0-2.3 2.2-3.1 3.2-1.9 1.2 1.4-.2 3.2-2.2 3.8M9.8 10.5C7.6 10 6.3 12 7.3 13.3c1.1 1.4 3.2.6 3.9-1.3M14.2 10.5c2.2-.5 3.5 1.5 2.5 2.8-1.1 1.4-3.2.6-3.9-1.3M12 14v6"/></svg></span>
+          <span><span class="logo-name">Флёр</span><span class="logo-sub">цветочная мастерская</span></span>
+        </a>
+        <p>Тула, ул. Менделеевская, 11. Ежедневно 8:00–22:00.</p>
+        <div class="subscribe">
+          <input type="email" placeholder="Почта для новостей" aria-label="Почта для подписки">
+          <button class="btn btn-terra btn-sm" type="submit">Подписаться</button>
+        </div>
+      </div>
+      <div>
+        <h4>Каталог</h4>
+        <a href="catalog.html">Готовые букеты</a>
+        <a href="constructor.html">Собрать свой</a>
+        <a href="wedding.html">Свадебные букеты</a>
+        <a href="constructor.html#addons">Подарки и открытки</a>
+      </div>
+      <div>
+        <h4>Помощь</h4>
+        <a href="delivery.html">Доставка и оплата</a>
+        <a href="delivery.html#faq">Вопросы и ответы</a>
+        <a href="florist.html">Услуги флориста</a>
+        <a href="#">Возврат букета</a>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <a href="tel:+74872550814">+7 (4872) 55-08-14</a>
+        <a href="mailto:hello@fleur-tula.ru">hello@fleur-tula.ru</a>
+        <a href="#">Telegram</a>
+        <a href="#">ВКонтакте</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Флёр. Цветочная мастерская, Тула.</span>
+      <div class="pay"><span>Visa</span><span>Mastercard</span><span>МИР</span><span>СБП</span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

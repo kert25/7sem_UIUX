@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Структура сайта — Флёр</title>
+<link rel="stylesheet" href="doc.css">
+</head>
+<body>
+<div class="page">
+  <div class="doc-head">
+    <div>
+      <div class="kicker">Практическая работа № 4 · макет сайта</div>
+      <h1>«Флёр» — структура сайта и сценарии</h1>
+    </div>
+    <div class="meta">Цветочная мастерская, Тула<br>6 страниц · 3 пользовательских сценария<br>Вариант 9</div>
+  </div>
+
+  <h2 class="sec">Карта страниц</h2>
+  <p class="note">Уровень 0 — точка входа, уровень 1 — разделы хедера, уровень 2 — блоки внутри раздела. Хедер и футер одинаковы на всех страницах.</p>
+
+  <div class="tree">
+    <div class="tree-root">
+      <div class="root-card"><b>Главная</b><span>index.html — витрина, хиты, шаги заказа</span></div>
+    </div>
+    <div class="connector"></div>
+
+    <div class="branches">
+      <div class="branch">
+        <div class="lvl">уровень 1</div>
+        <b>Каталог</b>
+        <div class="file">catalog.html</div>
+        <ul>
+          <li>Готовые букеты</li>
+          <li>Цветы в коробке</li>
+          <li>Монобукеты</li>
+          <li>Сухоцветы</li>
+          <li>Подарки и открытки</li>
+        </ul>
+      </div>
+      <div class="branch">
+        <div class="lvl">уровень 1</div>
+        <b>Конструктор</b>
+        <div class="file">constructor.html</div>
+        <ul>
+          <li>Шаг 1. Цветы поштучно</li>
+          <li>Шаг 2. Упаковка и лента</li>
+          <li>Шаг 3. Открытка, игрушка</li>
+          <li>Шаг 4. Доставка</li>
+          <li>Итоговая цена</li>
+        </ul>
+      </div>
+      <div class="branch">
+        <div class="lvl">уровень 1</div>
+        <b>Свадебные</b>
+        <div class="file">wedding.html</div>
+        <ul>
+          <li>Коллекции букетов</li>
+          <li>Комплекты и цены</li>
+          <li>Подбор букета (форма)</li>
+          <li>Примерка за 3 дня</li>
+        </ul>
+      </div>
+      <div class="branch">
+        <div class="lvl">уровень 1</div>
+        <b>Флорист</b>
+        <div class="file">florist.html</div>
+        <ul>
+          <li>Услуги и цены</li>
+          <li>Подписка на цветы</li>
+          <li>Запись к флористу</li>
+          <li>Вопросы об услугах</li>
+        </ul>
+      </div>
+      <div class="branch">
+        <div class="lvl">уровень 1</div>
+        <b>Доставка</b>
+        <div class="file">delivery.html</div>
+        <ul>
+          <li>Диапазон дат и интервал</li>
+          <li>Адрес и получатель</li>
+          <li>Зоны и тарифы</li>
+          <li>Вопросы и ответы</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="shared">
+      <b>Общие блоки на всех страницах</b>
+      <span class="chip-s">Хедер: логотип, меню, телефон, избранное, корзина</span>
+      <span class="chip-s">Футер: каталог, помощь, контакты, подписка</span>
+      <span class="chip-s">Хлебные крошки</span>
+      <span class="chip-s">Корзина и уведомление о добавлении</span>
+    </div>
+  </div>
+
+  <h2 class="sec">Пользовательские сценарии</h2>
+  <div class="flow">
+    <span class="name">1. Купить готовый букет</span>
+    <span class="step">Главная</span><span class="arr">→</span>
+    <span class="step">Каталог</span><span class="arr">→</span>
+    <span class="step">Фильтры и сортировка</span><span class="arr">→</span>
+    <span class="step">Карточка букета</span><span class="arr">→</span>
+    <span class="step">Корзина</span><span class="arr">→</span>
+    <span class="step">Доставка: дата и интервал</span><span class="arr">→</span>
+    <span class="step">Оплата</span>
+  </div>
+  <div class="flow">
+    <span class="name">2. Собрать букет самому</span>
+    <span class="step">Главная</span><span class="arr">→</span>
+    <span class="step">Конструктор</span><span class="arr">→</span>
+    <span class="step">Цветы: 1–99 шт.</span><span class="arr">→</span>
+    <span class="step">Упаковка</span><span class="arr">→</span>
+    <span class="step">Дополнения</span><span class="arr">→</span>
+    <span class="step">Доставка</span><span class="arr">→</span>
+    <span class="step">Корзина</span>
+  </div>
+  <div class="flow">
+    <span class="name">3. Заказать свадебный букет</span>
+    <span class="step">Главная</span><span class="arr">→</span>
+    <span class="step">Свадебные</span><span class="arr">→</span>
+    <span class="step">Коллекции</span><span class="arr">→</span>
+    <span class="step">Комплекты</span><span class="arr">→</span>
+    <span class="step">Форма подбора</span><span class="arr">→</span>
+    <span class="step">Звонок флориста</span><span class="arr">→</span>
+    <span class="step">Примерка</span>
+  </div>
+
+  <div class="shared" style="margin-top:22px">
+    <b>Принцип структуры</b>
+    <span style="font-size:12px;color:#4a443b">Каждая страница отвечает на один вопрос покупателя: «что купить» — каталог, «из чего собрать» — конструктор, «когда и куда привезти» — доставка, «кто соберёт» — флорист. Повторяющиеся блоки (хедер, футер, крошки) вынесены за пределы страниц, поэтому переход между разделами не требует нового обучения.</span>
+  </div>
+</div>
+</body>
+</html>

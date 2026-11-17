@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Разметка главной — Флёр</title>
+<link rel="stylesheet" href="doc.css">
+</head>
+<body>
+<div class="page">
+  <div class="doc-head">
+    <div>
+      <div class="kicker">Практическая работа № 4 · графическая разметка</div>
+      <h1>Главная страница: сетка и зоны</h1>
+    </div>
+    <div class="meta">Десктоп 1440 px · контейнер 1240 px<br>12 колонок, межколонник 24 px<br>Высота первого экрана 900 px</div>
+  </div>
+  <p class="note">Блоки пронумерованы в порядке чтения. Слева — зона контента, справа — зона изображения или виджета; ниже легенда с назначением и размером каждого блока.</p>
+
+  <div class="wire">
+    <div class="wf">
+      <div class="wgrid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+      <div class="blk wf-top"><span class="badge-n">1</span>Верхняя полоса: доставка, режим работы, вход</div>
+
+      <div class="blk wf-head" style="justify-content:space-between;padding:0 16px">
+        <span class="badge-n">2</span>
+        <span>Логотип «Флёр»</span><span>Меню: Каталог · Собрать · Свадебные · Флорист · Доставка</span><span>Телефон · ♡ · Корзина 2</span>
+      </div>
+
+      <div class="row" style="grid-template-columns: 7fr 5fr">
+        <div class="blk wf-hero tall" style="justify-content:flex-start;flex-direction:column;gap:8px;padding:16px">
+          <span class="badge-n">3</span>
+          <b style="font-size:15px;color:#4a443b">H1 — 58 px, два ряда</b>
+          <span>Подзаголовок 18 px, 3 строки</span>
+          <span style="display:flex;gap:8px;margin-top:6px">
+            <span class="blk" style="width:132px;height:34px;background:#d9cbba">Кнопка 1</span>
+            <span class="blk line" style="width:132px;height:34px">Кнопка 2</span>
+          </span>
+          <span style="display:flex;gap:26px;margin-top:8px">
+            <span>2 часа</span><span>7 дней</span><span>4,9 / 5</span>
+          </span>
+        </div>
+        <div class="blk wf-hero img"><span class="badge-n">4</span>Слайдер 3 слайда · 520 px</div>
+      </div>
+
+      <div class="row" style="grid-template-columns: repeat(4, 1fr)">
+        <div class="blk wf-cats"><span class="badge-n">5</span>Категория 1</div>
+        <div class="blk wf-cats">Категория 2</div>
+        <div class="blk wf-cats">Категория 3</div>
+        <div class="blk wf-cats">Категория 4</div>
+      </div>
+
+      <div class="row" style="grid-template-columns: repeat(4, 1fr)">
+        <div class="blk wf-cards"><span class="badge-n">6</span>Карточка букета</div>
+        <div class="blk wf-cards">Карточка букета</div>
+        <div class="blk wf-cards">Карточка букета</div>
+        <div class="blk wf-cards">Карточка букета</div>
+      </div>
+
+      <div class="row" style="grid-template-columns: repeat(4, 1fr)">
+        <div class="blk wf-feat"><span class="badge-n">7</span>Преимущество</div>
+        <div class="blk wf-feat">Преимущество</div>
+        <div class="blk wf-feat">Преимущество</div>
+        <div class="blk wf-feat">Преимущество</div>
+      </div>
+
+      <div class="blk wf-foot"><span class="badge-n">8</span>Футер: 4 колонки, подписка, документы</div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <div><b>1</b><span>Верхняя полоса, 40 px: доставка, часы, вход</span></div>
+    <div><b>2</b><span>Хедер, 84 px: логотип, меню, телефон, корзина</span></div>
+    <div><b>3</b><span>Герой: 7 колонок, H1 58 px, две кнопки</span></div>
+    <div><b>4</b><span>Слайдер: 5 колонок, 520 px, 3 слайда и точки</span></div>
+    <div><b>5</b><span>Категории: 4 × 3 колонки, вход в разделы</span></div>
+    <div><b>6</b><span>Хиты недели: 4 карточки по 3 колонки</span></div>
+    <div><b>7</b><span>Преимущества: 4 иконки в одну строку</span></div>
+    <div><b>8</b><span>Футер: навигация, контакты, подписка</span></div>
+  </div>
+</div>
+</body>
+</html>

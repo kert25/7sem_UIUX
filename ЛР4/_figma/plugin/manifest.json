@@ -4,6 +4,7 @@
   "api": "1.0.0",
   "main": "code.js",
   "editorType": ["figma"],
+  "documentAccess": "dynamic-page",
   "networkAccess": {
     "allowedDomains": ["http://localhost:8765"],
     "reasoning": "Локальный сервер сохраняет PNG-кадры макета для отчёта по лабораторной работе."

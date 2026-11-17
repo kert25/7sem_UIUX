@@ -1,0 +1,11 @@
+# Единые переводы строк: в репозитории и в рабочем дереве — LF.
+# Без этого core.autocrlf=true выгружает текст с CRLF, и SHA-256 в
+# ЛРN/quality_gate.json перестаёт совпадать с файлами на диске,
+# из-за чего verify-quality ложно сообщает «quality gate record is stale».
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.docx binary
+*.pdf binary

@@ -72,6 +72,41 @@ async function resolveFonts() {
 /* ---------- текстовые и цветовые стили ---------- */
 const STYLES = {};
 
+/* повторный запуск не должен падать на занятых именах стилей */
+async function dropStyles(prefix) {
+  let list = [];
+  if (typeof figma.getLocalTextStylesAsync === "function") {
+    list = await figma.getLocalTextStylesAsync();
+  } else if (typeof figma.getLocalTextStyles === "function") {
+    list = figma.getLocalTextStyles();
+  }
+  let removed = 0;
+  for (const s of list) {
+    if (s.name.indexOf(prefix) === 0) { s.remove(); removed++; }
+  }
+  return removed;
+}
+
+async function dropPaintStyles(prefix) {
+  let list = [];
+  if (typeof figma.getLocalPaintStylesAsync === "function") {
+    list = await figma.getLocalPaintStylesAsync();
+  } else if (typeof figma.getLocalPaintStyles === "function") {
+    list = figma.getLocalPaintStyles();
+  }
+  let removed = 0;
+  for (const s of list) {
+    if (s.name.indexOf(prefix) === 0) { s.remove(); removed++; }
+  }
+  return removed;
+}
+
+async function clearStyles() {
+  const t = await dropStyles("Текст/");
+  const p = await dropPaintStyles("Цвет/");
+  return t + "/" + p;
+}
+
 function makePaint(name, color, opacity) {
   const s = figma.createPaintStyle();
   s.name = "Цвет/" + name;
@@ -80,13 +115,35 @@ function makePaint(name, color, opacity) {
   return s;
 }
 
+function describeErr(e) {
+  if (!e) return "пустая ошибка";
+  return [e.name, e.message, String(e)].filter(function (x) { return x && String(x).length; }).join(" | ");
+}
+
 function makeText(name, font, size, lineHeight, color) {
-  const s = figma.createTextStyle();
+  if (!font || !font.family) throw new Error("шрифт не найден для стиля " + name + ": " + JSON.stringify(font));
+  let s;
+  try {
+    s = figma.createTextStyle();
+  } catch (e) {
+    throw new Error("createTextStyle " + name + ": " + describeErr(e));
+  }
   s.name = "Текст/" + name;
-  s.fontName = font;
-  s.fontSize = size;
-  s.lineHeight = { unit: "PERCENT", value: lineHeight };
-  s.fills = [fill(color || C.ink)];
+  const steps = [
+    ["fontName", function () { s.fontName = font; }],
+    ["fontSize", function () { s.fontSize = size; }],
+    ["lineHeight", function () { s.lineHeight = { unit: "PERCENT", value: lineHeight }; }]
+  ];
+  /* в актуальной Figma у TextStyle нет свойства fills — цвет задаётся на текстовом слое */
+  if ("fills" in s) steps.push(["fills", function () { s.fills = [fill(color || C.ink)]; }]);
+  for (const step of steps) {
+    try {
+      step[1]();
+    } catch (e) {
+      throw new Error("стиль " + name + " шаг " + step[0] + ": " + describeErr(e) +
+        " (тип=" + (s && s.type) + ", extensible=" + (s ? Object.isExtensible(s) : "?") + ")");
+    }
+  }
   STYLES["text:" + name] = s;
   return s;
 }
@@ -150,8 +207,8 @@ function txt(parent, s, x, y, opts) {
   t.fontSize = opts.size || 16;
   t.lineHeight = { unit: "PERCENT", value: opts.lh || 145 };
   if (opts.ls) t.letterSpacing = { unit: "PIXELS", value: opts.ls };
-  t.fills = [fill(opts.color || C.ink, opts.opacity)];
   if (opts.style && STYLES["text:" + opts.style]) t.textStyleId = STYLES["text:" + opts.style].id;
+  t.fills = [fill(opts.color || C.ink, opts.opacity)];
   if (opts.w) {
     t.textAutoResize = "HEIGHT";
     t.resize(opts.w, 8);

@@ -3,7 +3,8 @@
   "commit_on_completion": false,
   "project_notes": [
     "Титульный лист оформляется сборщиком make_docx.py по _context.json (образец — отчёты ЛР1/ЛР2).",
-    "Методичка ЛР2 — «Практическая работа 2.docx» — перенесена в ЛР2/методичка.docx."
+    "Методичка ЛР2 — «Практическая работа 2.docx» — перенесена в ЛР2/методичка.docx.",
+    "В .gitattributes включён eol=lf: иначе core.autocrlf=true выгружает текст с CRLF и SHA-256 в quality_gate.json перестаёт совпадать, а verify-quality ложно сообщает об устаревшей записи."
   ],
   "labs": {
     "1": {
@@ -40,7 +41,7 @@
       ],
       "verification": {
         "status": "passed",
-        "checked_at": "2026-11-02T12:37:03Z",
+        "checked_at": "2026-11-17T16:15:26Z",
         "checks": [
           "content_references",
           "artifacts",
@@ -111,7 +112,7 @@
       ],
       "verification": {
         "status": "passed",
-        "checked_at": "2026-11-02T13:23:17Z",
+        "checked_at": "2026-11-17T16:15:27Z",
         "checks": [
           "content_references",
           "artifacts",
@@ -192,7 +193,7 @@
       ],
       "verification": {
         "status": "passed",
-        "checked_at": "2026-11-10T11:41:47Z",
+        "checked_at": "2026-11-17T16:15:27Z",
         "checks": [
           "content_references",
           "artifacts",
@@ -206,7 +207,7 @@
       }
     },
     "4": {
-      "status": "in_progress",
+      "status": "ready_for_review",
       "directory": "ЛР4",
       "methodical_guide": "ЛР4/методичка.docx",
       "report_number": 4,
@@ -216,19 +217,24 @@
         "kind": "single",
         "paths": [
           "ЛР4/Отчет_ЛР4.docx",
-          "ЛР4/index.html",
-          "ЛР4/wire_home.html"
+          "ЛР4/_figma/plugin/manifest.json",
+          "ЛР4/index.html"
         ]
       },
       "notes": [
-        "Макет выполняется в Figma: плагин _figma/plugin строит 6 экранов, 3 листа разметки, карту сайта и дизайн-систему, создаёт цветовые и текстовые стили.",
-        "Плагин собран из частей _figma/plugin/parts скриптом _figma/build_plugin.mjs; иллюстрации букетов генерируются из site.js и вставляются вектором.",
-        "Экспорт PNG для отчёта: плагин вызывает figma.exportAsync и шлёт кадры на _figma/export_server.mjs (127.0.0.1:8765, папка _figma/figma_export).",
-        "Проверка до запуска: _figma/mock_figma.mjs прогоняет плагин на моке API, _figma/render_mock.mjs рисует SVG-превью кадров.",
-        "HTML-прототип из первой итерации остаётся источником дизайна и текстов, но в отчёт пойдут кадры из Figma."
+        "Макет собран в Figma Desktop 126.11.9 плагином Fleur Builder: страницы «01 Макет» (6 экранов), «02 Разметка» (3 листа), «03 Карта сайта», «04 Дизайн-система»; плагин создаёт цветовые и текстовые стили.",
+        "Кадры выгружены самим плагином через frame.exportAsync на локальный приёмник _figma/export_server.mjs; исходники кадров — _figma/figma_export, копии под именами рисунков — ЛР4/screenshots.",
+        "Интерактивный HTML/CSS-прототип (index.html и др.) остаётся для проверки поведения элементов; в отчёте рисунки 8 и 13 — состояния прототипа, остальные 11 — кадры Figma.",
+        "URL файла Figma в отчёте не приводится: файл лежит в Drafts аккаунта, доступ по ссылке не настраивался.",
+        "Иллюстрации букетов — стилизованные векторы из генератора site.js; на реальном сайте на их месте будут фотографии.",
+        "Плагин собирается из _figma/plugin/parts скриптом _figma/build_plugin.mjs; прогон на моке — _figma/mock_figma.mjs (проверяет только логику, вёрстку смотреть в Figma).",
+        "Кадры Figma выше 2100 px по высоте не влезают на страницу целиком — в отчёт они идут двумя частями (верхняя/нижняя); нижняя полоса-подвал снята отдельным кадром."
       ],
-      "next_step": "Запустить плагин Fleur Builder в Figma Desktop, снять кадры и пересобрать отчёт по скриншотам из Figma.",
+      "next_step": "Отчёт собран по кадрам Figma, quality gate пройден; ждём проверки пользователя.",
       "commands": {
+        "build_plugin": "node ЛР4/_figma/build_plugin.mjs",
+        "mock_check": "node ЛР4/_figma/mock_figma.mjs",
+        "export_server": "node ЛР4/_figma/export_server.mjs",
         "build_report": "<lab-works skill>/scripts/lab_runner.py --root . --lab 4 --action build-report",
         "prepare_report": "<lab-works skill>/scripts/lab_runner.py --root . --lab 4 --action prepare-report"
       },
@@ -264,14 +270,17 @@
         "ЛР4/screenshots/03_wire_home.png",
         "ЛР4/screenshots/04_wire_constructor.png",
         "ЛР4/screenshots/05_wire_mobile.png",
-        "ЛР4/screenshots/06_home.png",
+        "ЛР4/screenshots/06_home_1.png",
+        "ЛР4/screenshots/06_home_2.png",
         "ЛР4/screenshots/07_catalog.png",
         "ЛР4/screenshots/08_catalog_filters.png",
         "ЛР4/screenshots/09_constructor.png",
-        "ЛР4/screenshots/10_constructor_selected.png",
-        "ЛР4/screenshots/11_delivery.png",
-        "ЛР4/screenshots/12_wedding.png",
-        "ЛР4/screenshots/13_florist.png",
+        "ЛР4/screenshots/11_delivery_1.png",
+        "ЛР4/screenshots/11_delivery_2.png",
+        "ЛР4/screenshots/12_wedding_1.png",
+        "ЛР4/screenshots/12_wedding_2.png",
+        "ЛР4/screenshots/13_florist_1.png",
+        "ЛР4/screenshots/13_florist_2.png",
         "ЛР4/screenshots/14_footer.png",
         "ЛР4/screenshots/15_menu.png",
         "ЛР4/Отчет_ЛР4.docx",
@@ -283,16 +292,18 @@
         "ЛР4/_figma/export_server.mjs",
         "ЛР4/_figma/mock_figma.mjs",
         "ЛР4/_figma/render_mock.mjs",
+        "ЛР4/_figma/ui.ps1",
         "ЛР4/_figma/plugin/manifest.json",
         "ЛР4/_figma/plugin/code.js",
         "ЛР4/_figma/plugin/parts/00_head.js",
         "ЛР4/_figma/plugin/parts/10_pages.js",
         "ЛР4/_figma/plugin/parts/20_boards.js",
-        "ЛР4/_figma/plugin/parts/90_run.js"
+        "ЛР4/_figma/plugin/parts/90_run.js",
+        "ЛР4/_figma/figma_export"
       ],
       "verification": {
         "status": "passed",
-        "checked_at": "2026-11-17T11:35:00Z",
+        "checked_at": "2026-11-17T16:15:28Z",
         "checks": [
           "content_references",
           "artifacts",

@@ -3,7 +3,7 @@
   "lab": 3,
   "report_number": 3,
   "status": "passed",
-  "checked_at": "2026-11-10T11:41:47Z",
+  "checked_at": "2026-11-17T16:15:27Z",
   "checks": [
     "content_references",
     "artifacts",
@@ -20,7 +20,7 @@
     "ЛР3/text.docx"
   ],
   "sha256": {
-    "_context.json": "144f86279945010f874e9b539946276eff463abcdc61a7be251ac4aca4ed0d32",
+    "_context.json": "6a3820f8ed4fdd871194480abaf935cccb68d87f893a54c50273b923dae1f523",
     "ЛР3/bottlenecks.html": "c74e3a3edd6d907835b7ba1c7bf353b24b7ada861678ad77d2508526166f5fca",
     "ЛР3/content.json": "537e144125e758ccc9fb389ec02007ec7aa81039ff84d984bf2e975ca6ff9f10",
     "ЛР3/content_text.json": "c2f705720f7b79d69ac3f5ea6a2a2fde37424077eb64a32a3cb835dceaaa56fc",

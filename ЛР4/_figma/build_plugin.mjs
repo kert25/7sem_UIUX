@@ -31,7 +31,8 @@ const COMPOSITIONS = {
   hydrangeaMix: { items: [{ type: "hydrangea", count: 7 }, { type: "eucalyptus", count: 3 }], wrap: "film", ribbon: "#e8ddcb", seed: 27 },
   bride: { items: [{ type: "white_rose", count: 9 }, { type: "peony", count: 3 }, { type: "eucalyptus", count: 4 }], wrap: "film", ribbon: "#e8ddcb", seed: 44 },
   classicWhite: { items: [{ type: "white_rose", count: 15 }], wrap: "film", ribbon: "#e8ddcb", seed: 36 },
-  terra: { items: [{ type: "rose", count: 9 }, { type: "tulip", count: 5 }, { type: "eucalyptus", count: 3 }], wrap: "kraft", ribbon: "#bf6a4e", seed: 8 }
+  terra: { items: [{ type: "rose", count: 9 }, { type: "tulip", count: 5 }, { type: "eucalyptus", count: 3 }], wrap: "kraft", ribbon: "#bf6a4e", seed: 8 },
+  construct: { items: [{ type: "rose", count: 9 }, { type: "peony", count: 5 }, { type: "eucalyptus", count: 5 }], wrap: "box", ribbon: "#bf6a4e", seed: 12 }
 };
 
 const bouquets = {};

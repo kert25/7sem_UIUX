@@ -19,6 +19,18 @@ const server = http.createServer((req, res) => {
     res.end();
     return;
   }
+  if (req.method === "POST" && url.pathname === "/log") {
+    const chunks = [];
+    req.on("data", (c) => chunks.push(c));
+    req.on("end", () => {
+      const text = Buffer.concat(chunks).toString("utf8");
+      fs.appendFileSync(path.join(out, "_log.txt"), text + "\n");
+      console.log("LOG " + text);
+      res.writeHead(200);
+      res.end("ok");
+    });
+    return;
+  }
   if (req.method === "POST" && url.pathname === "/upload") {
     const raw = url.searchParams.get("name") || "shot";
     const safe = raw.replace(/[^\wа-яА-ЯёЁ0-9 _-]+/g, "_").trim();

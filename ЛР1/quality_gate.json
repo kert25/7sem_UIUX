@@ -3,7 +3,7 @@
   "lab": 1,
   "report_number": 1,
   "status": "passed",
-  "checked_at": "2026-11-02T12:37:03Z",
+  "checked_at": "2026-11-17T16:15:26Z",
   "checks": [
     "content_references",
     "artifacts",
@@ -20,7 +20,7 @@
     "ЛР1/text.docx"
   ],
   "sha256": {
-    "_context.json": "144f86279945010f874e9b539946276eff463abcdc61a7be251ac4aca4ed0d32",
+    "_context.json": "6a3820f8ed4fdd871194480abaf935cccb68d87f893a54c50273b923dae1f523",
     "ЛР1/content.json": "4ffaccd958d4a59f56eef8b10ae198ca1b90a4a0f74e0eac8e6bb8142bca4640",
     "ЛР1/content_text.json": "67255a0dd3fa79842483608bc094c19e98f367df10e5bf1affdf1aa6af9dc41f",
     "ЛР1/screenshots/bad_arngren.png": "19534c0104497f6644f652d1e115fc5a126e9d900846461799c2349add45e445",

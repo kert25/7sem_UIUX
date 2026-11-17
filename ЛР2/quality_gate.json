@@ -3,7 +3,7 @@
   "lab": 2,
   "report_number": 2,
   "status": "passed",
-  "checked_at": "2026-11-02T13:23:17Z",
+  "checked_at": "2026-11-17T16:15:27Z",
   "checks": [
     "content_references",
     "artifacts",
@@ -20,13 +20,13 @@
     "ЛР2/text.docx"
   ],
   "sha256": {
-    "_context.json": "144f86279945010f874e9b539946276eff463abcdc61a7be251ac4aca4ed0d32",
+    "_context.json": "6a3820f8ed4fdd871194480abaf935cccb68d87f893a54c50273b923dae1f523",
     "ЛР2/cjm_data.json": "112a5c6d003fb55f833a4e3ea66e4b86618b24e620c5a9bdd924affb0f8a82c6",
-    "ЛР2/CJM_map.html": "bcef272e2696b4aa258417616df6ae63889b54d5c4f94f6ebe5728178bb8e15c",
+    "ЛР2/CJM_map.html": "57db9ae31acab263929ad76a7fed2c3860ec0d42ae35c3ab82d110281e555b49",
     "ЛР2/CJM_Островок.xlsx": "726b7ef0e3b18f39816877364355e00c3404023e2151a53e4888d81667dccb7c",
     "ЛР2/content.json": "ef3031e6da22a3c676be494025df8e73b685f4d0b247a7a61d479092673d6573",
     "ЛР2/content_text.json": "365985ada81db727c65ee6936bf5bbc798a4cad033e064b141e55c9478e6d2c2",
-    "ЛР2/emotion_curve.html": "408fa6ea3605c82b27f13553039daef02837e1c4704e4e2202ce304a206c7c0b",
+    "ЛР2/emotion_curve.html": "b20511848af369fe0d0a7eb5732e2809a6d521a03c341b5e50c4ffba2cb52d30",
     "ЛР2/make_cjm.py": "29f29a38f13e0a646c094dc0cf36dd81e98c0bb3cb7b71bb1ab99041a0ff4f38",
     "ЛР2/screenshots/01_home.png": "f8d46faf4b5660a18fb7114f430bd3ab177f1dd09dbf811fa819f2359f19263b",
     "ЛР2/screenshots/02_results.png": "991a9f99b62a91b6c2ac6ccfd18ed3de616ee009a7c65d39538df829969c6698",

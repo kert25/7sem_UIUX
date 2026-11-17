@@ -54,7 +54,7 @@ function radioLine(page, x, y, label, on) {
 
 /* ---------------------------------------------------------------- ГЛАВНАЯ */
 function buildHome(page) {
-  const f = pageFrame(page, "01 Главная", 0, 0, W, 3300);
+  const f = pageFrame(page, "01 Главная", 0, 0, W, 3360);
   buildHeader(f, 0);
 
   /* герой */
@@ -212,7 +212,7 @@ function buildHome(page) {
     txt(card, r[0], 70, 183, { size: 13, color: C.muted });
   });
 
-  buildFooter(f, 2740);
+  buildFooter(f, 2810);
   return f;
 }
 
@@ -650,7 +650,7 @@ function buildDelivery(page) {
     faqY += h + 10;
   });
 
-  buildFooter(f, 2200);
+  buildFooter(f, 2320);
   return f;
 }
 

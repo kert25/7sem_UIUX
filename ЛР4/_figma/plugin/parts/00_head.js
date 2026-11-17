@@ -483,9 +483,20 @@ function productCard(page, x, y, w, conf) {
   card.strokeAlign = "INSIDE";
   card.clipsContent = true;
 
-  rect(card, 0, 0, w, artH, conf.artBg || "#F6EFE4");
-  circle(card, w / 2 - artH * 0.36, 20, artH * 0.72, "#FFFFFF", { opacity: 0.28 });
-  bouquet(card, conf.bouquet, 6, 4, w - 12);
+  /* фотография букета живёт в отдельном обрезающем фрейме: иначе вектор
+     (600×700 при ширине карточки) вылезает ниже зоны фото и наезжает на текст */
+  const art = figma.createFrame();
+  card.appendChild(art);
+  art.name = "Фото";
+  art.resize(w, artH);
+  art.x = 0;
+  art.y = 0;
+  art.cornerRadius = 0;
+  art.fills = [fill(conf.artBg || "#F6EFE4")];
+  art.clipsContent = true;
+  art.layoutMode = "NONE";
+  circle(art, w / 2 - artH * 0.36, 20, artH * 0.72, "#FFFFFF", { opacity: 0.28 });
+  bouquet(art, conf.bouquet, 6, 4, w - 12);
   if (conf.tag) tag(card, 12, 12, conf.tag, conf.tagKind);
   circle(card, w - 46, 12, 34, C.white);
   icon(card, "heart", w - 37, 21, 17, C.green);

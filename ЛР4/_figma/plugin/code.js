@@ -1834,7 +1834,22 @@ async function newPage(name) {
 (async () => {
   try {
     await log("0 start");
-    servicePage = figma.currentPage;
+    /* служебную страницу ищем по имени, а не переименовываем текущую:
+       иначе при повторном запуске текущая «01 Макет» превращалась в ещё одну
+       «00 Служебное», и в файле копились пустые страницы */
+    const servicePages = figma.root.children.filter((p) => p.name === "00 Служебное");
+    servicePage = servicePages[0];
+    if (!servicePage) {
+      servicePage = figma.createPage();
+      servicePage.name = "00 Служебное";
+      servicePages.push(servicePage);
+    }
+    /* сначала переключаемся на свою страницу: текущую страницу Figma удалять не даёт */
+    await usePage(servicePage);
+    for (const extra of servicePages.slice(1)) {
+      if (extra === servicePage) continue;
+      try { extra.remove(); } catch (e) { await log("лишняя страница не удалена: " + describeErr(e)); }
+    }
     servicePage.name = "00 Служебное";
     await loadPage(servicePage);
     for (const child of servicePage.children.slice()) child.remove();

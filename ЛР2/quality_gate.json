@@ -3,7 +3,7 @@
   "lab": 2,
   "report_number": 2,
   "status": "passed",
-  "checked_at": "2026-11-17T16:15:27Z",
+  "checked_at": "2026-11-18T12:28:41Z",
   "checks": [
     "content_references",
     "artifacts",
@@ -15,12 +15,12 @@
   ],
   "warnings": [],
   "files": [
-    "ЛР2/Отчет_ЛР2.docx",
-    "ЛР2/Отчет_ЛР2.pdf",
+    "ЛР2/Отчет2_ЛР2.docx",
+    "ЛР2/Отчет2_ЛР2.pdf",
     "ЛР2/text.docx"
   ],
   "sha256": {
-    "_context.json": "6a3820f8ed4fdd871194480abaf935cccb68d87f893a54c50273b923dae1f523",
+    "_context_dronova.json": "783714614bbcb0f88ae970d89f773e6fb8599fd3097bf94aa139f02668b8f47c",
     "ЛР2/cjm_data.json": "112a5c6d003fb55f833a4e3ea66e4b86618b24e620c5a9bdd924affb0f8a82c6",
     "ЛР2/CJM_map.html": "57db9ae31acab263929ad76a7fed2c3860ec0d42ae35c3ab82d110281e555b49",
     "ЛР2/CJM_Островок.xlsx": "726b7ef0e3b18f39816877364355e00c3404023e2151a53e4888d81667dccb7c",
@@ -36,8 +36,10 @@
     "ЛР2/screenshots/06_reviews.png": "df106db35b26b58f1c053b484e08c8b9787f8e09c86938683eb19f9d39a51710",
     "ЛР2/screenshots/07_emotion_curve.png": "41a3ae696a73d57923be37c5e5d37d45c28c8e92c7f677ddee39eb3e32595dc7",
     "ЛР2/screenshots/08_cjm_map.png": "b455412f52143dc2b61d138e9ec81e93a44a916c68a6999d00a958c4f6ebd0ec",
-    "ЛР2/text.docx": "78370fb1ec82dc13be53267a30d08d13b9a3c7c2a4a99d02510062eb40219fcc",
+    "ЛР2/text.docx": "0eb72a399bc7d97dc5019f84459d5716b37483e79cdbb23c2561db08ebf639ca",
     "ЛР2/методичка.docx": "79b6537a5cfaef47538598c10ed078af94c5a3d772a42a8b33fca013fa05e267",
+    "ЛР2/Отчет2_ЛР2.docx": "20424f323a6ac55271881a0bcb124a3e5deac18a604d05806cc4498bbe3caf15",
+    "ЛР2/Отчет2_ЛР2.pdf": "42ffa976ff15af43ceb6fc69940e48904cea31b0c3c617d3f923cd1629aa693d",
     "ЛР2/Отчет_ЛР2.docx": "7598f3a921c572e0e485a8a962069c5dedf95f475fc9d70ada6e509661415abe",
     "ЛР2/Отчет_ЛР2.pdf": "1bb5c45f85f5637cbbdfac6626632817d35d18edd0385e29e8bcc945e6c98aee"
   }

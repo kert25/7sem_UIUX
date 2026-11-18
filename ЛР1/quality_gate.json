@@ -3,7 +3,7 @@
   "lab": 1,
   "report_number": 1,
   "status": "passed",
-  "checked_at": "2026-11-17T16:15:26Z",
+  "checked_at": "2026-11-18T12:28:25Z",
   "checks": [
     "content_references",
     "artifacts",
@@ -15,12 +15,12 @@
   ],
   "warnings": [],
   "files": [
-    "ЛР1/Отчет_ЛР1.docx",
-    "ЛР1/Отчет_ЛР1.pdf",
+    "ЛР1/Отчет2_ЛР1.docx",
+    "ЛР1/Отчет2_ЛР1.pdf",
     "ЛР1/text.docx"
   ],
   "sha256": {
-    "_context.json": "6a3820f8ed4fdd871194480abaf935cccb68d87f893a54c50273b923dae1f523",
+    "_context_dronova.json": "783714614bbcb0f88ae970d89f773e6fb8599fd3097bf94aa139f02668b8f47c",
     "ЛР1/content.json": "4ffaccd958d4a59f56eef8b10ae198ca1b90a4a0f74e0eac8e6bb8142bca4640",
     "ЛР1/content_text.json": "67255a0dd3fa79842483608bc094c19e98f367df10e5bf1affdf1aa6af9dc41f",
     "ЛР1/screenshots/bad_arngren.png": "19534c0104497f6644f652d1e115fc5a126e9d900846461799c2349add45e445",
@@ -29,8 +29,10 @@
     "ЛР1/screenshots/good_apple_store.png": "86f0333a83af5f438114f55a94cac4c7c5f7eb25652c51aacdffe39ed6175fa3",
     "ЛР1/screenshots/good_guardian_books.png": "8c60d7e6f152e2a2dddbc2d2a3e1932a809a3e79333909f325fe2228435fb218",
     "ЛР1/screenshots/good_nngroup.png": "325753ca751f2181dcdedde37379d3b85d1a6e428d2278ab631a8b324f9e3ea2",
-    "ЛР1/text.docx": "9929a4e05fefe8b727c4c7b25d189cd146ca61de47f254219e77e949b80c4c2c",
+    "ЛР1/text.docx": "00251b58a916ed2b82e83692fc5f193b2e608a3723ac31f873b919d26a8d29b5",
     "ЛР1/методичка.docx": "c354656925bae40ff1fc3f2afbf7fb21fbd7f3e715c673fe962139540a263894",
+    "ЛР1/Отчет2_ЛР1.docx": "b8a57ba5769d957157ab122fff6163073fe5d5b3b6f8cc8248a388d5b4f89487",
+    "ЛР1/Отчет2_ЛР1.pdf": "0580fdea3f28a6de0c9e5057e193157cdafb750908b39c739f9c24af5953ca7d",
     "ЛР1/Отчет_ЛР1.docx": "366d71c13280f7b25a04c77e53ace271036465d7ef7a5dcecc68577c9d5c30df",
     "ЛР1/Отчет_ЛР1.pdf": "0e0eb406c95030ab7366dc828744dbe3ec2fbfb13efd7f35a7629166425a146f"
   }

@@ -4,13 +4,17 @@
   "project_notes": [
     "Титульный лист оформляется сборщиком make_docx.py по _context.json (образец — отчёты ЛР1/ЛР2).",
     "Методичка ЛР2 — «Практическая работа 2.docx» — перенесена в ЛР2/методичка.docx.",
-    "В .gitattributes включён eol=lf: иначе core.autocrlf=true выгружает текст с CRLF и SHA-256 в quality_gate.json перестаёт совпадать, а verify-quality ложно сообщает об устаревшей записи."
+    "В .gitattributes включён eol=lf: иначе core.autocrlf=true выгружает текст с CRLF и SHA-256 в quality_gate.json перестаёт совпадать, а verify-quality ложно сообщает об устаревшей записи.",
+    "Комплект для второго принимающего: _context_dronova.json и отчёты ЛРN/Отчет2_ЛРN.docx|pdf; сборка — lab_runner --lab N --action prepare-report. Отчёты Отчет_ЛРN.* с Кулешовой Н. В. оставлены без изменений."
   ],
   "labs": {
     "1": {
       "status": "ready_for_review",
       "directory": "ЛР1",
       "methodical_guide": "ЛР1/методичка.docx",
+      "context": "_context_dronova.json",
+      "report": "ЛР1/Отчет2_ЛР1.docx",
+      "pdf": "ЛР1/Отчет2_ЛР1.pdf",
       "report_number": 1,
       "theme": "Основные принципы UX/UI дизайна",
       "variant": "9",
@@ -35,13 +39,15 @@
         "ЛР1/screenshots/good_nngroup.png",
         "ЛР1/screenshots/good_guardian_books.png",
         "ЛР1/Отчет_ЛР1.docx",
+        "ЛР1/Отчет2_ЛР1.docx",
+        "ЛР1/Отчет2_ЛР1.pdf",
         "ЛР1/Отчет_ЛР1.pdf",
         "ЛР1/text.docx",
         "ЛР1/quality_gate.json"
       ],
       "verification": {
         "status": "passed",
-        "checked_at": "2026-11-17T16:15:26Z",
+        "checked_at": "2026-11-18T12:28:25Z",
         "checks": [
           "content_references",
           "artifacts",
@@ -58,6 +64,9 @@
       "status": "ready_for_review",
       "directory": "ЛР2",
       "methodical_guide": "ЛР2/методичка.docx",
+      "context": "_context_dronova.json",
+      "report": "ЛР2/Отчет2_ЛР2.docx",
+      "pdf": "ЛР2/Отчет2_ЛР2.pdf",
       "report_number": 2,
       "theme": "Анализ пользовательских сценариев и составление CJM для существующего цифрового продукта",
       "variant": "9",
@@ -106,13 +115,15 @@
         "ЛР2/screenshots/07_emotion_curve.png",
         "ЛР2/screenshots/08_cjm_map.png",
         "ЛР2/Отчет_ЛР2.docx",
+        "ЛР2/Отчет2_ЛР2.docx",
+        "ЛР2/Отчет2_ЛР2.pdf",
         "ЛР2/Отчет_ЛР2.pdf",
         "ЛР2/text.docx",
         "ЛР2/quality_gate.json"
       ],
       "verification": {
         "status": "passed",
-        "checked_at": "2026-11-17T16:15:27Z",
+        "checked_at": "2026-11-18T12:28:41Z",
         "checks": [
           "content_references",
           "artifacts",
@@ -129,6 +140,9 @@
       "status": "ready_for_review",
       "directory": "ЛР3",
       "methodical_guide": "ЛР3/методичка.docx",
+      "context": "_context_dronova.json",
+      "report": "ЛР3/Отчет2_ЛР3.docx",
+      "pdf": "ЛР3/Отчет2_ЛР3.pdf",
       "report_number": 3,
       "theme": "Сравнение интерфейсов одной задачи и UX-аудит",
       "variant": "9",
@@ -187,13 +201,15 @@
         "ЛР3/screenshots/B6_seat_picked.png",
         "ЛР3/screenshots/B7_passengers.png",
         "ЛР3/Отчет_ЛР3.docx",
+        "ЛР3/Отчет2_ЛР3.docx",
+        "ЛР3/Отчет2_ЛР3.pdf",
         "ЛР3/Отчет_ЛР3.pdf",
         "ЛР3/text.docx",
         "ЛР3/quality_gate.json"
       ],
       "verification": {
         "status": "passed",
-        "checked_at": "2026-11-17T16:15:27Z",
+        "checked_at": "2026-11-18T12:28:50Z",
         "checks": [
           "content_references",
           "artifacts",
@@ -210,6 +226,9 @@
       "status": "ready_for_review",
       "directory": "ЛР4",
       "methodical_guide": "ЛР4/методичка.docx",
+      "context": "_context_dronova.json",
+      "report": "ЛР4/Отчет2_ЛР4.docx",
+      "pdf": "ЛР4/Отчет2_ЛР4.pdf",
       "report_number": 4,
       "theme": "Разработка шаблона макета сайта",
       "variant": "9",
@@ -284,6 +303,8 @@
         "ЛР4/screenshots/14_footer.png",
         "ЛР4/screenshots/15_menu.png",
         "ЛР4/Отчет_ЛР4.docx",
+        "ЛР4/Отчет2_ЛР4.docx",
+        "ЛР4/Отчет2_ЛР4.pdf",
         "ЛР4/Отчет_ЛР4.pdf",
         "ЛР4/text.docx",
         "ЛР4/quality_gate.json",
@@ -303,7 +324,7 @@
       ],
       "verification": {
         "status": "passed",
-        "checked_at": "2026-11-17T17:34:31Z",
+        "checked_at": "2026-11-18T12:28:58Z",
         "checks": [
           "content_references",
           "artifacts",

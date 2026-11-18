@@ -3,7 +3,7 @@
   "lab": 3,
   "report_number": 3,
   "status": "passed",
-  "checked_at": "2026-11-17T16:15:27Z",
+  "checked_at": "2026-11-18T12:28:50Z",
   "checks": [
     "content_references",
     "artifacts",
@@ -15,12 +15,12 @@
   ],
   "warnings": [],
   "files": [
-    "ЛР3/Отчет_ЛР3.docx",
-    "ЛР3/Отчет_ЛР3.pdf",
+    "ЛР3/Отчет2_ЛР3.docx",
+    "ЛР3/Отчет2_ЛР3.pdf",
     "ЛР3/text.docx"
   ],
   "sha256": {
-    "_context.json": "6a3820f8ed4fdd871194480abaf935cccb68d87f893a54c50273b923dae1f523",
+    "_context_dronova.json": "783714614bbcb0f88ae970d89f773e6fb8599fd3097bf94aa139f02668b8f47c",
     "ЛР3/bottlenecks.html": "c74e3a3edd6d907835b7ba1c7bf353b24b7ada861678ad77d2508526166f5fca",
     "ЛР3/content.json": "537e144125e758ccc9fb389ec02007ec7aa81039ff84d984bf2e975ca6ff9f10",
     "ЛР3/content_text.json": "c2f705720f7b79d69ac3f5ea6a2a2fde37424077eb64a32a3cb835dceaaa56fc",
@@ -46,8 +46,10 @@
     "ЛР3/screenshots/B6_seat_picked.png": "7c69d301c727677fae27ec0324d300670b85118a1ca623868371f26e56b1d8f4",
     "ЛР3/screenshots/B7_passengers.png": "e5dc9a8b811024f6910282feebc1b56061212d07de86e8eb80a4c88f7e153da6",
     "ЛР3/task_tree.html": "6ff6c0f83185c3dbc9a3b05323248c8de763fd44c8f56b50c5d71b84f7b9857b",
-    "ЛР3/text.docx": "d58bb069da59ba67b50e6ecbf8ecc40309b21165171e85dd239dc39ea3a104dc",
+    "ЛР3/text.docx": "fb8619bb1b0ea7b9c9dc0d392d5daa733ccbd45bedf2aa34ad0e8d21f0172571",
     "ЛР3/методичка.docx": "a04f3e42639280c7bf5e759525dab763f6cc4ffc056ca1d273d7897ce2b942a3",
+    "ЛР3/Отчет2_ЛР3.docx": "799d7fc445387fcd683b4f84a04ff7607995842e68133f003aa28871c5d1a4d0",
+    "ЛР3/Отчет2_ЛР3.pdf": "475e188602a5372a57f247dcb9a37df602a234720a344dae3d1ecf80b1750bd7",
     "ЛР3/Отчет_ЛР3.docx": "c153b2c1a1a6d81aba5c67863d2925006b90fa353ff615d35e22973f9ba0644c",
     "ЛР3/Отчет_ЛР3.pdf": "239fa1513695346be424566d62102b7610dcb02ff22ee951dba73b710cdd7ba3"
   }

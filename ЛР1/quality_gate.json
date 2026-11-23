@@ -3,7 +3,7 @@
   "lab": 1,
   "report_number": 1,
   "status": "passed",
-  "checked_at": "2026-11-23T12:45:25Z",
+  "checked_at": "2026-11-23T13:33:56Z",
   "checks": [
     "content_references",
     "artifacts",
@@ -24,19 +24,19 @@
   ],
   "sha256": {
     "_context_dronova.json": "783714614bbcb0f88ae970d89f773e6fb8599fd3097bf94aa139f02668b8f47c",
-    "ЛР1/content.json": "4ffaccd958d4a59f56eef8b10ae198ca1b90a4a0f74e0eac8e6bb8142bca4640",
-    "ЛР1/text.docx": "dc39aa69274067ba07c4fbd56ccf056c5e5ccdb88fca48cd626da6e45e3db7dc",
-    "ЛР1/Отчет2_ЛР1.docx": "b8a57ba5769d957157ab122fff6163073fe5d5b3b6f8cc8248a388d5b4f89487",
-    "ЛР1/Отчет2_ЛР1.pdf": "0580fdea3f28a6de0c9e5057e193157cdafb750908b39c739f9c24af5953ca7d"
+    "ЛР1/content.json": "1ba33ab06915b4de15da68521fdc628aa5ddb63564565eb2275fa731339667de",
+    "ЛР1/text.docx": "50b9944f7e05d758e0fd3f6e947feb0ebc44e49ddbeae492257e4b0a63328cd5",
+    "ЛР1/Отчет2_ЛР1.docx": "2a339dd9f4d93938415a838784bcdc1cea0c87be780a11bf0d01566cc71f6e7a",
+    "ЛР1/Отчет2_ЛР1.pdf": "80ceca240be0340b2382f09d32dad3bb6475232a2620b82330a1f2ecb08f4c98"
   },
   "artifacts": [
     "ЛР1/content_text.json",
-    "ЛР1/screenshots/bad_arngren.png",
-    "ЛР1/screenshots/bad_suzannecollins.png",
-    "ЛР1/screenshots/bad_yale.png",
-    "ЛР1/screenshots/good_apple_store.png",
-    "ЛР1/screenshots/good_guardian_books.png",
-    "ЛР1/screenshots/good_nngroup.png",
+    "ЛР1/screenshots/01_card_bad_ivi.png",
+    "ЛР1/screenshots/02_card_good_wink.png",
+    "ЛР1/screenshots/03_header_bad_premier.png",
+    "ЛР1/screenshots/04_header_good_kion.png",
+    "ЛР1/screenshots/05_filters_bad_start.png",
+    "ЛР1/screenshots/06_filters_good_kinopoisk.png",
     "ЛР1/Отчет_ЛР1.docx",
     "ЛР1/Отчет_ЛР1.pdf",
     "ЛР1/методичка.docx"

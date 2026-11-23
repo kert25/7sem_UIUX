@@ -19,10 +19,11 @@
       "theme": "Основные принципы UX/UI дизайна",
       "variant": "9",
       "notes": [
-        "Требуется не менее трёх пар примеров хорошего и плохого проектирования веб-сайтов с описанием ошибок.",
-        "Отрицательные и удачные примеры идут в одинаковом порядке и относятся к близким областям; разбор каждого примера строится на одних и тех же признаках, сами пары в тексте не называются."
+        "Сфера — онлайн-кинотеатры; три типа элемента: карточка фильма, шапка сайта, фильтры каталога; в каждой паре оба сайта современные.",
+        "Старые сайты исключены намеренно: сравнение эпох измеряет технологии, а не дизайнерские решения.",
+        "Снимки: Edge 158.0.4370.33, окно 1440×900, чистый профиль, 23.11.2026; страницы каталогов шести кинотеатров."
       ],
-      "next_step": "Отчёт пересобран и проверен; ждём проверки пользователя.",
+      "next_step": "Отчёт пересобран по шести снимкам, гейт пройден; ждём проверки пользователя.",
       "tooling": {
         "report_inspector": "bundled:inspect_docx",
         "report_runner": "bundled:lab_runner",
@@ -32,16 +33,16 @@
         "ЛР1/методичка.docx",
         "ЛР1/content.json",
         "ЛР1/content_text.json",
-        "ЛР1/screenshots/bad_arngren.png",
-        "ЛР1/screenshots/bad_yale.png",
-        "ЛР1/screenshots/bad_suzannecollins.png",
-        "ЛР1/screenshots/good_apple_store.png",
-        "ЛР1/screenshots/good_nngroup.png",
-        "ЛР1/screenshots/good_guardian_books.png",
+        "ЛР1/screenshots/01_card_bad_ivi.png",
+        "ЛР1/screenshots/02_card_good_wink.png",
+        "ЛР1/screenshots/03_header_bad_premier.png",
+        "ЛР1/screenshots/04_header_good_kion.png",
+        "ЛР1/screenshots/05_filters_bad_start.png",
+        "ЛР1/screenshots/06_filters_good_kinopoisk.png",
         "ЛР1/Отчет_ЛР1.docx",
+        "ЛР1/Отчет_ЛР1.pdf",
         "ЛР1/Отчет2_ЛР1.docx",
         "ЛР1/Отчет2_ЛР1.pdf",
-        "ЛР1/Отчет_ЛР1.pdf",
         "ЛР1/text.docx",
         "ЛР1/quality_gate.json"
       ],
